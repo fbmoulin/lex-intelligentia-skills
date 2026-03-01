@@ -1,194 +1,247 @@
 ---
 name: jurisprudencia-miner
-description: Pesquisa, mineração, análise e validação de jurisprudência dos tribunais brasileiros (STF, STJ, TJ-ES, TRFs, TST). Usar quando o usuário precisar encontrar precedentes judiciais, teses vinculantes, súmulas, acórdãos, repercussões gerais ou recursos repetitivos aplicáveis a um caso concreto. Ativar também para: montar ementas de jurisprudência, identificar divergência jurisprudencial, rastrear evolução de teses, validar citações de acórdãos, construir argumentação jurisprudencial e pesquisar por tema/artigo/número de súmula. Inclui estratégias anti-alucinação para citações jurídicas. Disparar sempre que o usuário mencionar "jurisprudência", "precedente", "súmula", "tese STJ", "repercussão geral", "repetitivo", "acórdão", "julgado" ou "pesquisa de jurisprudência".
+description: Usar quando o usuario precisar pesquisar, validar ou analisar jurisprudencia dos tribunais brasileiros (STF, STJ, TJs, TRFs, TST). Usar para encontrar precedentes, sumulas, teses vinculantes, recursos repetitivos ou repercussao geral aplicaveis a um caso. Triggers: "jurisprudencia", "precedente", "sumula", "tese STJ", "repercussao geral", "repetitivo", "acordao", "julgado", "pesquisa jurisprudencial".
 ---
 
-# Jurisprudência Miner — Pesquisa e Validação de Precedentes Brasileiros
+# Jurisprudencia Miner — Pesquisa e Validacao de Precedentes Brasileiros
 
-## ⚠️ Protocolo Anti-Alucinação
+## Overview
 
-Citações jurídicas inventadas destroem credibilidade profissional. Esta skill adota 
-**verificação obrigatória** antes de qualquer citação:
+Skill para pesquisa estruturada e validacao de jurisprudencia brasileira com protocolo anti-alucinacao rigoroso. Nao e um banco de dados de Sumulas — e uma **metodologia de pesquisa** que ensina a encontrar, validar e citar precedentes de forma segura.
 
-```
-REGRA DE OURO: Nunca inventar número de processo, data de julgamento, 
-turma ou relator. Se não tiver certeza, INDICAR que é necessária 
-verificação nas fontes oficiais antes de uso profissional.
-```
+## When to Use
 
-**Fontes primárias para verificação (sempre indicar ao usuário):**
-- STF: https://portal.stf.jus.br/jurisprudencia/
-- STJ: https://scon.stj.jus.br/
-- TJ-ES: https://www.tjes.jus.br/jurisprudencia/
-- TRFs: https://www.cjf.jus.br/juris/
+- Fundamentar tese com jurisprudencia do STJ/STF
+- Identificar divergencia jurisprudencial sobre um tema
+- Rastrear evolucao de teses ao longo do tempo
+- Validar citacoes de acordaos antes de usar em pecas
+- Construir argumentacao jurisprudencial para sentenca ou peticao
+- Pesquisar por tema, artigo de lei ou numero de Sumula
+
+**When NOT to Use:**
+- Redigir a sentenca (usar `sentenca-judicial-br`)
+- Analisar pecas processuais (usar `peticao-analyzer`)
+- Validar solidez de uma tese juridica (usar `tese-juridica-validator`)
 
 ---
 
-## Hierarquia dos Precedentes Brasileiros
+## Protocolo Anti-Alucinacao (OBRIGATORIO)
+
+Citacoes juridicas inventadas destroem credibilidade profissional. Esta skill adota **verificacao obrigatoria** antes de qualquer citacao:
 
 ```
-[VINCULANTES — art. 927, CPC]
-├── Súmulas Vinculantes do STF
-├── Decisões em Controle Concentrado (ADI, ADC, ADPF, ADO)
-├── Acórdãos em RE com Repercussão Geral (§§ 2º e 11, art. 927)
-├── Acórdãos em REsp/AREsp Repetitivos (§ 2º do art. 927)
-└── Enunciados de Súmulas do STF e STJ (persuasivos — § 4º)
+REGRA DE OURO: Nunca inventar numero de processo, data de julgamento,
+turma ou relator. Se nao tiver certeza, INDICAR que e necessaria
+verificacao nas fontes oficiais antes de uso profissional.
+```
+
+### Niveis de Confianca
+
+| Nivel | Quando usar | Formato de citacao |
+|-------|-------------|-------------------|
+| CONFIRMADO | Sumula com numero certo, tese amplamente consolidada | Citar + "[CONFIRMAR no tribunal]" |
+| PROVAVEL | Tendencia jurisprudencial consistente | "Ha jurisprudencia no sentido de..." + "[VERIFICAR]" |
+| INCERTO | Sem informacao segura da posicao atual | Declarar incerteza + fornecer links de busca |
+
+### Fontes Primarias para Verificacao
+
+| Tribunal | URL de busca |
+|----------|-------------|
+| STF — Jurisprudencia | https://portal.stf.jus.br/jurisprudencia/ |
+| STF — Sumulas Vinculantes | https://portal.stf.jus.br/textos/verTexto.asp?servico=jurisprudenciaSumulaVinculante |
+| STJ — Pesquisa | https://scon.stj.jus.br/SCON/ |
+| STJ — Teses Repetitivas | https://processo.stj.jus.br/repetitivos/ |
+| STJ — Sumulas | https://www.stj.jus.br/sites/portalp/Jurisprudencia/Sumulas |
+| TJ-ES — ESIS | https://sistemas.tjes.jus.br/esis/ |
+| TRFs — CJF | https://www.cjf.jus.br/juris/ |
+| TST | https://jurisprudencia.tst.jus.br/ |
+
+---
+
+## Hierarquia dos Precedentes Brasileiros (art. 927, CPC)
+
+```
+[VINCULANTES]
+|-- Sumulas Vinculantes do STF
+|-- Decisoes em Controle Concentrado (ADI, ADC, ADPF, ADO)
+|-- Acordaos em RE com Repercussao Geral
+|-- Acordaos em REsp/AREsp Repetitivos
+|-- IAC — Incidente de Assuncao de Competencia
 
 [PERSUASIVOS]
-├── Súmulas do STJ e STF (não vinculantes)
-├── Precedentes das Seções e Cortes Especiais
-├── Julgamentos com IAC (Incidente de Assunção de Competência)
-└── Jurisprudência dos Tribunais de Justiça e TRFs
+|-- Sumulas do STJ e STF (nao vinculantes)
+|-- Precedentes das Secoes e Cortes Especiais
+|-- Jurisprudencia dos Tribunais de Justica e TRFs
+|-- Enunciados do FPPC (Processualistas Civis)
 ```
 
 ---
 
-## Banco de Súmulas e Teses por Área
+## Referencia de Sumulas por Area
 
-### Direito Bancário
+**ATENCAO:** As sinteses abaixo sao orientativas. SEMPRE verificar o enunciado completo no site do tribunal antes de usar em pecas ou decisoes. Sumulas podem ser revogadas, superadas ou ter redacao diferente da sintese aqui apresentada.
 
-| Referência | Enunciado (síntese) |
-|-----------|---------------------|
-| Súmula 541/STJ | Capitalização mensal dos juros é admitida em contratos bancários celebrados após 31.3.2000 |
-| Súmula 566/STJ | Nos contratos bancários pós-29.12.1990, não incide CMN Res. 15/1964 |
-| Súmula 382/STJ | A estipulação de juros remuneratórios superiores a 12% a.a. não indica, por si só, abusividade |
-| Súmula 297/STJ | CDC aplica-se às instituições financeiras |
-| Súmula 388/STJ | Dano moral pela negativação indevida — in re ipsa |
-| Tema 958/STJ (Repetitivo) | Tarifas bancárias: abusividade / legalidade das cobranças |
-| Tema 618/STJ (Repetitivo) | Juros remuneratórios: parâmetros para revisão |
+### Direito Bancario
+
+| Referencia | Sintese orientativa | Status |
+|-----------|--------------------|---------|
+| Sumula 297/STJ | CDC aplica-se as instituicoes financeiras | [VERIFICAR enunciado completo] |
+| Sumula 382/STJ | Juros remuneratorios acima de 12% a.a. nao indicam, por si so, abusividade | [VERIFICAR enunciado completo] |
+| Sumula 541/STJ | Capitalizacao mensal de juros em contratos bancarios | [VERIFICAR enunciado completo] |
+| Sumula 566/STJ | Tarifa de cadastro em contratos bancarios pos-Resolucao CMN 3.518/2007 | [VERIFICAR enunciado completo] |
 
 ### Direito do Consumidor
 
-| Referência | Enunciado (síntese) |
-|-----------|---------------------|
-| Súmula 297/STJ | CDC aplica-se às instituições financeiras |
-| Súmula 469/STJ | CDC aplica-se aos contratos de planos de saúde |
-| Súmula 563/STJ | CDC aplica-se às entidades abertas de previdência complementar |
-| Súmula 286/STJ | CDC aplica-se ao contrato de arrendamento mercantil |
-| Tema 786/STF (RG) | CDC aplica-se a contratos entre brasileiros no exterior |
+| Referencia | Sintese orientativa | Status |
+|-----------|--------------------|---------|
+| Sumula 297/STJ | CDC aplica-se as instituicoes financeiras | [VERIFICAR enunciado completo] |
+| Sumula 469/STJ | CDC aplica-se aos contratos de planos de saude | [VERIFICAR enunciado completo] |
+| Sumula 563/STJ | CDC e entidades abertas de previdencia complementar | [VERIFICAR enunciado completo] |
 
 ### Responsabilidade Civil
 
-| Referência | Enunciado (síntese) |
-|-----------|---------------------|
-| Súmula 37/STJ | Danos morais e materiais são cumuláveis |
-| Súmula 227/STJ | PJ pode sofrer dano moral |
-| Súmula 370/STJ | Corte de serviços essenciais = dano moral presumido |
-| Súmula 403/STJ | Uso não autorizado de imagem = dano moral in re ipsa |
-| Súmula 498/STJ | Prazo prescricional para reparação de dano moral: 3 anos |
+| Referencia | Sintese orientativa | Status |
+|-----------|--------------------|---------|
+| Sumula 37/STJ | Cumulacao de danos morais e materiais | [VERIFICAR enunciado completo] |
+| Sumula 227/STJ | Pessoa juridica pode sofrer dano moral | [VERIFICAR enunciado completo] |
+| Sumula 403/STJ | Uso nao autorizado de imagem e dano moral | [VERIFICAR enunciado completo] |
 
-### Processo Civil (CPC 2015)
+### Processo Civil
 
-| Referência | Enunciado (síntese) |
-|-----------|---------------------|
-| Súmula 293/STJ | Cabe agravo contra decisão que não admite RE/REsp |
-| Tema 1.076/STJ | Honorários recursais: cabimento e cálculo |
-| Enunciados do FPPC | Fórum Permanente de Processualistas Civis |
+| Referencia | Sintese orientativa | Status |
+|-----------|--------------------|---------|
+| Art. 927, CPC | Hierarquia de precedentes vinculantes | Lei — nao precisa verificar |
+| Art. 489, §1, CPC | Requisitos de fundamentacao analitica | Lei — nao precisa verificar |
+| Art. 926, CPC | Dever de uniformizacao e coerencia | Lei — nao precisa verificar |
 
-### Família
-
-| Referência | Enunciado (síntese) |
-|-----------|---------------------|
-| Súmula 655/STJ | Prazo decadencial no reconhecimento de filiação |
-| Súmula 529/STJ | No divórcio, partilha de bem gravado com cláusula de incomunicabilidade |
-| Tema 1.010/STJ | Alimentos gravídicos |
+**Nota:** Foram removidas referencias com descricao incorreta da versao anterior desta skill. Ao pesquisar Sumulas em areas como Familia, Posse, Execucao — sempre consultar diretamente no site do STJ.
 
 ---
 
-## Estratégias de Pesquisa por Situação
+## Estrategias de Pesquisa por Situacao
 
-### Situação 1: "Preciso de jurisprudência para fundamentar [tese X]"
+### Situacao 1: "Preciso de jurisprudencia para fundamentar [tese X]"
 
 **Processo:**
-1. Identificar a área do direito e o ponto jurídico específico
+1. Identificar a area do direito e o ponto juridico especifico
 2. Mapear palavras-chave: nome da tese, artigo de lei, parte da ementa
-3. Sugerir busca nas fontes primárias com os termos corretos
-4. Apresentar as súmulas e temas repetitivos conhecidos
-5. Indicar o caminho de verificação para uso profissional
+3. Sugerir busca nas fontes primarias com os termos corretos
+4. Apresentar Sumulas e temas repetitivos conhecidos (com nivel de confianca)
+5. Indicar o caminho de verificacao para uso profissional
 
 **Template de output:**
 ```
-📌 PESQUISA JURISPRUDENCIAL — [Tema]
+PESQUISA JURISPRUDENCIAL — [Tema]
 
-🔑 Palavras-chave sugeridas para busca:
-• "[termo 1]" AND "[termo 2]"
-• "[artigo X]" AND "[princípio]"
+[PALAVRAS-CHAVE SUGERIDAS]
+- "[termo 1]" AND "[termo 2]"
+- "[artigo X]" AND "[principio]"
 
-📚 Referências conhecidas (verificar nas fontes antes de usar):
-• Súmula XXX/STJ: [enunciado]
-• Tema YYY/STJ (Repetitivo): [síntese da tese fixada]
-• RG Tema ZZZ/STF: [síntese]
+[REFERENCIAS CONHECIDAS] (verificar nas fontes antes de usar)
+- Sumula XXX/STJ: [sintese] — [VERIFICAR enunciado completo]
+- Tema YYY/STJ (Repetitivo): [sintese da tese] — [VERIFICAR]
+- RG Tema ZZZ/STF: [sintese] — [VERIFICAR]
 
-🔗 Links para verificação:
-• STJ: [url de busca]
-• STF: [url de busca]
+[LINKS PARA VERIFICACAO]
+- STJ: https://scon.stj.jus.br/SCON/
+- STF: https://portal.stf.jus.br/jurisprudencia/
 
-⚠️ Importante: Confirme número, data e relator antes de usar em 
-   peças processuais ou decisões.
+IMPORTANTE: Confirme numero, data e relator antes de usar em
+pecas processuais ou decisoes.
 ```
 
-### Situação 2: "Preciso identificar se existe divergência sobre [questão]"
+### Situacao 2: "Preciso identificar divergencia sobre [questao]"
 
 **Processo:**
-1. Apresentar as correntes doutrinárias/jurisprudenciais existentes
-2. Mapear os tribunais que adotam cada posição
-3. Identificar se STJ/STF já pacificou a questão ou se há IRDR/repetitivo pendente
-4. Recomendar posição mais segura para o caso concreto
+1. Apresentar as correntes doutrinarias/jurisprudenciais existentes
+2. Mapear os tribunais que adotam cada posicao
+3. Identificar se STJ/STF ja pacificou (Sumula, repetitivo, RG) ou se ha IRDR pendente
+4. Recomendar posicao mais segura para o caso concreto
 
-### Situação 3: "Qual a evolução jurisprudencial sobre [tema]?"
+### Situacao 3: "Qual a evolucao jurisprudencial sobre [tema]?"
 
 **Processo:**
-1. Marcos temporais relevantes (pré e pós-CPC/2015, pré e pós-CDC, etc.)
+1. Marcos temporais relevantes (pre e pos-CPC/2015, pre e pos-CDC, etc.)
 2. Reviravolta jurisprudencial — indicar quando houve overruling
 3. Estado atual consolidado
-4. Tendências identificadas nos julgamentos recentes
+4. Tendencias identificadas nos julgamentos recentes
 
 ---
 
 ## Formato de Ementa Estruturada
 
-Para apresentar jurisprudência, sempre usar:
+Para apresentar jurisprudencia, sempre usar:
 
 ```
-[ÁREA DO DIREITO]. [TEMA ESPECÍFICO]. [TESE CENTRAL].
+[AREA DO DIREITO]. [TEMA ESPECIFICO]. [TESE CENTRAL].
 
-[Desenvolvimento: fatos → questão → aplicação da norma → conclusão]
+[Desenvolvimento: fatos -> questao -> aplicacao da norma -> conclusao]
 
 [Dispositivo legal aplicado]
 
-[Tribunal], [Órgão julgador], [Tipo de recurso] n. [número], 
-Rel. Min./Des. [nome], j. [data], [publicação].
+[Tribunal], [Orgao julgador], [Tipo de recurso] n. [numero],
+Rel. Min./Des. [nome], j. [data], [publicacao].
 ```
 
 ---
 
-## Pesquisa Temática por Artigo de Lei
+## Pesquisa Tematica por Artigo de Lei
 
-Quando o usuário informar um artigo, identificar:
-- Controvérsias interpretativas conhecidas
-- Súmulas relacionadas
-- Teses em repercussão geral / recursos repetitivos
-- Enunciados do FPPC aplicáveis
-- Doutrina majoritária
-
----
-
-## Integração com n8n (automação)
-
-Para workflows automáticos de pesquisa jurisprudencial via n8n, combinar com:
-- **HTTP Request** para APIs dos tribunais (quando disponíveis)
-- **AI Agent** para análise e classificação dos resultados
-- **Vector Store** para indexação e recuperação semântica de ementas
+Quando o usuario informar um artigo, identificar:
+- Controversias interpretativas conhecidas
+- Sumulas relacionadas (com [VERIFICAR])
+- Teses em repercussao geral / recursos repetitivos
+- Enunciados do FPPC aplicaveis
+- Doutrina majoritaria
 
 ---
 
-## Checklist de Qualidade da Citação Jurídica
+## Common Mistakes
 
-Antes de usar qualquer citação em peça ou decisão:
-- [ ] Número do processo verificado na fonte oficial
+| Erro | Como evitar |
+|------|------------|
+| Citar Sumula com descricao inventada pelo LLM | SEMPRE verificar enunciado completo no site do tribunal — LLMs frequentemente atribuem descricoes erradas a numeros corretos |
+| Confiar em numero de REsp gerado por IA | Nunca citar numero de processo sem verificar na fonte — usar nivel PROVAVEL ou INCERTO |
+| Ignorar superacao de precedente | Verificar se a Sumula/tese ainda e vigente — pode ter sido cancelada ou superada |
+| Citar ementa sem ler o acordao | A ementa pode nao refletir a tese completa — verificar ratio decidendi |
+| Nao fazer distinguishing | Ao aplicar precedente, demonstrar que os fatos do caso se ajustam (art. 489, §1, V, CPC) |
+| Tratar Sumula persuasiva como vinculante | Apenas Sumulas Vinculantes do STF vinculam — Sumulas do STJ sao persuasivas (art. 927, IV, CPC) |
+| Banco de Sumulas desatualizado | Sumulas podem ser revogadas a qualquer tempo — sempre verificar data da ultima atualizacao |
+
+---
+
+## Integracao com Outras Skills
+
+| De | Para | Uso |
+|----|------|-----|
+| `peticao-analyzer` | **jurisprudencia-miner** | Teses identificadas na peca -> pesquisar precedentes |
+| **jurisprudencia-miner** | `sentenca-judicial-br` | Precedentes encontrados -> fundamentar decisao |
+| **jurisprudencia-miner** | `tese-juridica-validator` | Tese + precedentes -> validar solidez |
+| `lex-rag-builder` | **jurisprudencia-miner** | Base vetorial de ementas -> busca semantica |
+
+---
+
+## Checklist de Qualidade da Citacao Juridica
+
+Antes de usar qualquer citacao em peca ou decisao:
+
+- [ ] Numero do processo verificado na fonte oficial
 - [ ] Data de julgamento confirmada
 - [ ] Relator correto
-- [ ] Turma/Seção/Pleno correto
-- [ ] Tese fixada fiel ao acórdão (não apenas à ementa)
-- [ ] Vigência confirmada (não houve superação do precedente)
-- [ ] Aplicabilidade ao caso concreto justificada (distinguishing se necessário)
+- [ ] Turma/Secao/Pleno correto
+- [ ] Tese fixada fiel ao acordao (nao apenas a ementa)
+- [ ] Vigencia confirmada (nao houve superacao do precedente)
+- [ ] Aplicabilidade ao caso concreto justificada (distinguishing se necessario)
+- [ ] Nivel de confianca (CONFIRMADO/PROVAVEL/INCERTO) declarado
+
+---
+
+## Workflow de Uso
+
+1. **Receber** a questao juridica ou tese a fundamentar
+2. **Classificar** a area do direito e o tipo de pesquisa
+3. **Consultar** Sumulas e temas repetitivos conhecidos (com nivel de confianca)
+4. **Sugerir** termos de busca para fontes primarias
+5. **Formatar** o output com ementa estruturada
+6. **Aplicar** checklist de qualidade em cada citacao
+7. **Encaminhar** para `sentenca-judicial-br` ou `tese-juridica-validator`
