@@ -26,48 +26,68 @@ Skill de referencia estruturada para calculos em decisoes judiciais. Contem tabe
 
 ## 1. Juros Moratorios
 
-### Tabela de Juros por Tipo de Obrigacao
+### REGRA PRINCIPAL — Tema 1.368/STJ (a partir de 15/10/2025)
 
-| Tipo | Taxa | Termo Inicial | Fundamentacao | Observacao |
-|------|------|---------------|---------------|------------|
-| Responsabilidade extracontratual | 1% a.m. (CC) ou SELIC | Evento danoso (Sumula 54/STJ) | Art. 398, CC + Sumula 54/STJ | SELIC ja inclui correcao |
-| Responsabilidade contratual | 1% a.m. (CC) ou taxa contratual | Citacao valida (art. 405, CC) | Art. 405, CC | Se contrato preve taxa, aplica-se a contratual ate o limite legal |
-| Alimentos | 1% a.m. | Citacao | Art. 405, CC | Cada parcela vence no dia fixado |
-| Fazenda Publica (pre-EC 113) | 1% a.m. ate 09/12/2021 | Citacao (ou evento danoso se extracontratual) | Art. 1-F, Lei 9.494/97 (redacao LC 150/2015) | IPCA-E para correcao |
-| Fazenda Publica (pos-EC 113) | SELIC (juros + correcao) | A partir de 09/12/2021 | Art. 3, EC 113/2021 | SELIC UNICA — sem correcao separada |
-| Repetição de indebito | 1% a.m. | Citacao (ou pagamento indevido, se ma-fe) | Art. 405 CC c/c art. 876, CC | Sumula 188/STJ: a partir do pagamento indevido |
+**Tema Repetitivo 1.368/STJ** (REsp 2.199.164/PR e 2.070.882/RS, Min. Villas Boas Cueva, Corte Especial, 15/10/2025; endosso constitucional: STF RE 1.558.191/SP, Min. Andre Mendonca, set/2025):
+
+**SELIC e o indice UNICO para atualizacao de dividas civis.** Substitui a formula anterior (1% a.m. + IPCA-E). Vedacao expressa de cumulacao SELIC + IPCA-E (bis in idem).
+
+### Tabela de Juros por Tipo de Obrigacao (pos-Tema 1.368)
+
+| Tipo | Indice | Termo Inicial | Fundamentacao | Observacao |
+|------|--------|---------------|---------------|------------|
+| Responsabilidade extracontratual | SELIC | Evento danoso (Sumulas 54+362/STJ convergidas) | Tema 1.368/STJ + Sumula 54/STJ | SELIC unica desde o evento — inclui juros + correcao |
+| Responsabilidade contratual | SELIC (ou taxa contratual) | Citacao valida (art. 405, CC) | Tema 1.368/STJ + Art. 405, CC | Se contrato preve taxa propria, aplica-se a contratual ate o limite legal |
+| Dano moral | SELIC | Evento danoso | Tema 1.368 (convergencia Sumulas 54+362) | Antes: IPCA-E desde arbitramento. Agora: SELIC desde o evento |
+| Alimentos | SELIC | Citacao | Tema 1.368 + Art. 405, CC | Cada parcela vence no dia fixado |
+| Repeticao de indebito | SELIC | Cada pagamento indevido | Tema 1.368 + arts. 876 e 405, CC | Sumula 188/STJ mantida quanto ao termo inicial |
+| Fazenda Publica (pos-EC 113) | SELIC | 09/12/2021 em diante | Art. 3, EC 113/2021 | Ja era SELIC unica — Tema 1.368 confirma |
+| Fazenda Publica (pre-EC 113) | IPCA-E + 1% a.m. ate 09/12/2021 | Citacao (ou evento danoso) | Art. 1-F, Lei 9.494/97 | Periodo anterior: manter formula antiga |
+
+**ATENCAO — Convergencia Sumulas 54 + 362 (N2 — em consolidacao):**
+O Tema 1.368 indica SELIC desde o evento danoso para dano moral extracontratual, convergindo Sumula 54 (juros desde o evento) com Sumula 362 (correcao desde o arbitramento) em um unico indice. Consolidacao pelas turmas do STJ ainda em curso — monitorar. [VERIFICAR periodicamente]
 
 ### Regra da SELIC como Indice Unico
 
-Quando se aplica SELIC como taxa de juros, **NAO** se aplica correcao monetaria separada, pois a SELIC ja embute componente de correcao. Cumular SELIC + IPCA-E e ERRO (bis in idem).
+**SELIC = juros + correcao monetaria.** Quando se aplica SELIC, **NUNCA** cumular com IPCA-E, INPC ou qualquer outro indice de correcao. Fazer isso e bis in idem (Tema 1.368/STJ, expressamente).
 
 ---
 
 ## 2. Correcao Monetaria
 
-### Tabela de Indices por Contexto
+### Tabela de Indices por Contexto (pos-Tema 1.368)
 
-| Contexto | Indice | Termo Inicial | Fundamentacao | Publicado por |
-|----------|--------|---------------|---------------|---------------|
-| Dano moral | IPCA-E (ou SELIC) | Arbitramento (Sumula 362/STJ) | Sumula 362/STJ | IBGE |
-| Dano material — emergente | IPCA-E (ou SELIC) | Desembolso efetivo | Art. 389, CC | IBGE |
-| Dano material — lucros cessantes | IPCA-E (ou SELIC) | Vencimento de cada parcela | Art. 389, CC | IBGE |
-| Contratos bancarios | IPCA-E (ou indice contratual) | Vencimento da obrigacao | Contrato + art. 389, CC | IBGE / contrato |
-| Fazenda Publica pre-EC 113 | IPCA-E | Dano ou citacao | Lei 9.494/97, art. 1-F | IBGE |
-| Fazenda Publica pos-EC 113 | SELIC (unica) | 09/12/2021 em diante | Art. 3, EC 113/2021 | BACEN |
-| Salarios e beneficios previdenciarios | INPC | Competencia devida | Legislacao previdenciaria | IBGE |
-| Alugueis | IGP-M ou IPCA | Vencimento | Contrato (Lei 8.245/91) | FGV / IBGE |
-| Depositos judiciais | SELIC | Deposito | Lei 9.703/98 | BACEN |
+**Regra geral para dividas civis: SELIC unica (Tema 1.368/STJ).** Indices separados (IPCA-E, INPC) permanecem apenas para contextos especificos.
 
-### Template para Sentenca — Bloco Correcao
+| Contexto | Indice | Termo Inicial | Fundamentacao | Observacao |
+|----------|--------|---------------|---------------|------------|
+| Dividas civis em geral | SELIC (unica) | Conforme tipo (ver tabela juros) | Tema 1.368/STJ | Regra principal pos-15/10/2025 |
+| Dano moral extracontratual | SELIC | Evento danoso | Tema 1.368 (convergencia S.54+S.362) | Antes: IPCA-E desde arbitramento |
+| Dano material | SELIC | Desembolso efetivo / vencimento | Tema 1.368 + art. 389, CC | Antes: IPCA-E |
+| Repeticao de indebito | SELIC | Cada pagamento indevido | Tema 1.368 + art. 876, CC | Antes: IPCA-E desde desembolso |
+| Contratos bancarios | SELIC (ou indice contratual) | Vencimento da obrigacao | Tema 1.368 + contrato | Indice contratual prevalece se valido |
+| Fazenda Publica pre-EC 113 | IPCA-E + juros separados | Dano ou citacao | Lei 9.494/97, art. 1-F | Periodo ATE 09/12/2021 |
+| Fazenda Publica pos-EC 113 | SELIC (unica) | 09/12/2021 em diante | Art. 3, EC 113/2021 | Ja era SELIC — Tema 1.368 confirma |
+| Salarios e beneficios previdenciarios | INPC | Competencia devida | Legislacao previdenciaria | Regime proprio — nao afetado |
+| Alugueis | IGP-M ou IPCA | Vencimento | Contrato (Lei 8.245/91) | Indice contratual prevalece |
+| Depositos judiciais | SELIC | Deposito | Lei 9.703/98 | Ja era SELIC |
+
+### Template para Sentenca — Bloco Correcao (pos-Tema 1.368)
 
 ```
-Correcao monetaria:
-- Indice: [IPCA-E / SELIC / INPC / IGP-M]
-- Termo inicial: [DATA/EVENTO]
-- Fundamentacao: [LEI/SUMULA]
-[SE SELIC:] Juros e correcao ja inclusos na SELIC — NAO cumular com outro indice.
-[SE IPCA-E:] Acrescer juros de [TAXA] a contar de [TERMO].
+[REGRA GERAL — DIVIDAS CIVIS:]
+Atualizacao monetaria pelo indice SELIC, que inclui juros e correcao monetaria
+(Tema Repetitivo 1.368/STJ), a contar de [TERMO INICIAL — evento danoso / citacao /
+desembolso / arbitramento, conforme o tipo].
+Vedada a cumulacao com qualquer outro indice de correcao (IPCA-E, INPC).
+
+[SE FAZENDA PUBLICA — PERIODO DUAL:]
+(a) Ate 09/12/2021: correcao pelo IPCA-E + juros de [TAXA] a contar de [TERMO];
+(b) A partir de 09/12/2021: SELIC unica (art. 3, EC 113/2021).
+
+[SE CONTRATO COM INDICE PROPRIO:]
+Indice contratual de [ESPECIFICAR] ate o vencimento/inadimplemento;
+apos, SELIC nos termos do Tema 1.368/STJ.
 ```
 
 ---
@@ -174,6 +194,33 @@ Fundamentacao: Art. 537, CPC.
 | Embargos de declaracao | Sem preparo | Art. 1.023, CPC |
 | Agravo interno | Sem preparo (maioria dos TJs) | Regimento interno |
 
+### Honorarios Periciais em AJG — TJES (Ato 008/2021)
+
+**Norma:** Ato Normativo Conjunto 008/2021-PRES/TJES (revogou OS 004/2016).
+
+**4 hipoteses matriciais:**
+
+| Hipotese | Regime | Base normativa |
+|----------|--------|----------------|
+| (a) Nenhuma parte tem AJG | Requerente da prova adianta integralmente | Art. 95, caput, CPC |
+| (b) Autora tem AJG, so reu requereu | Reu adianta integralmente; AJG da autora nao repercute | Art. 95, caput, CPC |
+| (c) Autora com AJG deve ratear | Cota da autora → Estado via SEI (Secretaria Judiciaria); excedente ao teto CNJ suspenso 5 anos | Art. 95, §3, II + Ato 008/2021 + Res. CNJ 232/2016 |
+| (d) Reu PJ alega AJG | PJ deve COMPROVAR insuficiencia (presuncao e so para pessoa natural) | Art. 99, §§2 e 3, CPC |
+
+**Procedimento TJES (via SEI):**
+1. Decisao de AJG transitada em julgado
+2. Nomeacao do perito com enquadramento na tabela
+3. CND do perito
+4. Oficio a Secretaria Judiciaria via SEI
+5. Intimacao previa da PGE — condicao de procedibilidade para pagamento
+
+**Tabelas de referencia:**
+- Pericias medicas: Resolucao TJES 06/2021 + convenio PGE
+- Demais pericias: tabela CNJ 232/2016 (TJES nao editou tabela propria — art. 17, Ato 008/2021)
+- Ressarcimento ao erario: art. 15 do Ato 008/2021
+
+**Em qualquer hipotese:** AJG nao afasta responsabilidade pela sucumbencia (art. 98, §2, CPC); exigibilidade suspensa por 5 anos (art. 98, §3).
+
 ---
 
 ## 7. RPV e Precatorio
@@ -195,13 +242,15 @@ Fundamentacao: Art. 537, CPC.
 | Erro | Correto |
 |------|---------|
 | SELIC + IPCA-E (bis in idem) | SELIC ja inclui correcao — usar sozinha |
-| Correcao desde a citacao para dano moral | Desde o ARBITRAMENTO (Sumula 362/STJ) |
+| Correcao desde a citacao para dano moral | SELIC desde o EVENTO DANOSO (Tema 1.368 — convergencia S.54+S.362) |
 | Honorarios sobre valor da causa quando ha condenacao | Base = valor da condenacao (art. 85, §2) |
 | Multa do art. 523 contra Fazenda Publica | Fazenda se sujeita ao art. 535, nao ao 523 |
 | Astreintes sem teto maximo | Recomendavel fixar limite total |
 | Fracionar precatorio em RPVs | Vedado — Sumula 100/CNJ |
 | Juros de 1% + SELIC simultaneos | SELIC = juros + correcao |
 | Fazenda pos-EC 113 com IPCA-E + juros separados | SELIC unica desde 09/12/2021 |
+| Aplicar 1% a.m. + IPCA-E apos 15/10/2025 | Tema 1.368: SELIC unica para dividas civis — formula antiga superada |
+| Honorarios periciais AJG sem intimacao da PGE | Intimacao previa da PGE e condicao de procedibilidade (Ato 008/2021-TJES) |
 
 ---
 

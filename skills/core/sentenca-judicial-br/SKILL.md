@@ -269,28 +269,38 @@ de causalidade.
 **ATENCAO:** O termo inicial dos juros de mora varia conforme a natureza da responsabilidade. Erro neste ponto e motivo frequente de embargos de declaracao.
 
 ### Responsabilidade Extracontratual (ilicito civil, CDC, acidente)
+
+**REGRA POS-TEMA 1.368/STJ (a partir de 15/10/2025):**
 ```
-Juros de mora: desde o EVENTO DANOSO (Sumula 54/STJ).
-[CONFIRMAR Sumula 54/STJ — "Os juros moratorios fluem a partir
-do evento danoso, em caso de responsabilidade extracontratual"]
+SELIC UNICA desde o EVENTO DANOSO (convergencia Sumulas 54+362/STJ).
+Inclui juros de mora + correcao monetaria em indice unico.
+Vedada cumulacao com IPCA-E ou qualquer outro indice.
 
-Correcao monetaria sobre dano MATERIAL: desde cada desembolso
-(Sumula 43/STJ — "Incide correcao monetaria sobre divida por
-ato ilicito a partir da data do efetivo prejuizo").
-[CONFIRMAR Sumula 43/STJ]
+Dano MATERIAL: SELIC desde cada desembolso efetivo.
+Dano MORAL: SELIC desde o evento danoso (antes era IPCA-E
+desde arbitramento — Sumula 362/STJ convergida pelo Tema 1.368).
+```
 
-Correcao monetaria sobre dano MORAL: desde o arbitramento
-(Sumula 362/STJ — "A correcao monetaria do valor da
-indenizacao do dano moral incide desde a data do
-arbitramento").
-[CONFIRMAR Sumula 362/STJ]
+**Regra anterior (REFERENCIA HISTORICA — para periodos pre-Tema 1.368):**
+```
+Juros de mora: 1% a.m. desde o evento danoso (Sumula 54/STJ).
+Correcao monetaria dano material: IPCA-E desde desembolso (Sumula 43/STJ).
+Correcao monetaria dano moral: IPCA-E desde arbitramento (Sumula 362/STJ).
 ```
 
 ### Responsabilidade Contratual (inadimplemento de contrato)
-```
-Juros de mora: desde a CITACAO (art. 405, CC).
 
-Correcao monetaria: desde o vencimento da obrigacao.
+**REGRA POS-TEMA 1.368/STJ:**
+```
+SELIC UNICA desde a CITACAO (art. 405, CC + Tema 1.368/STJ).
+Se contrato preve taxa propria, aplica-se a contratual ate o
+limite legal; apos inadimplemento, SELIC.
+```
+
+**Regra anterior (REFERENCIA HISTORICA):**
+```
+Juros de mora: 1% a.m. desde a citacao (art. 405, CC).
+Correcao monetaria: IPCA-E desde o vencimento da obrigacao.
 ```
 
 ### Fazenda Publica — EC 113/2021 (art. 3)
@@ -353,11 +363,20 @@ estadual/federal].
 
 [VERIFICAR limites atualizados — estados e municipios podem fixar limites proprios por lei]
 
-### Indice de Correcao — Relacoes Privadas
+### Indice de Correcao — Relacoes Privadas (pos-Tema 1.368/STJ)
 ```
-Regra geral: IPCA-E (indice oficial de inflacao).
-NAO aplicar Selic em relacoes privadas (Selic e para
-Fazenda Publica — EC 113/2021).
+REGRA GERAL (a partir de 15/10/2025 — Tema 1.368/STJ):
+SELIC e o indice UNICO para atualizacao de dividas civis,
+incluindo relacoes privadas. Substitui a formula anterior
+(1% a.m. + IPCA-E). Vedada cumulacao SELIC + IPCA-E (bis in idem).
+
+REsp 2.199.164/PR e 2.070.882/RS, Min. Villas Boas Cueva,
+Corte Especial, 15/10/2025. Endosso constitucional: STF RE
+1.558.191/SP, Min. Andre Mendonca, set/2025.
+
+ATENCAO: A regra anterior (IPCA-E + 1% a.m.) estava INCORRETA
+neste campo — a SELIC agora e para TODAS as dividas civis,
+nao apenas para Fazenda Publica.
 ```
 
 ---
@@ -563,6 +582,8 @@ Antes de redigir, verificar:
 | Esquecer honorarios ou custas | Sempre incluir no dispositivo — verificar o checklist |
 | Confundir resp. subjetiva com objetiva | Verificar se ha previsao legal de risco (art. 927, p.u.) ou relacao de consumo |
 | Negativacao indevida + inscricao preexistente | Sumula 385/STJ afasta dano moral se ha anotacao legitima anterior |
+| Aplicar 1% a.m. + IPCA-E apos Tema 1.368 (15/10/2025) | SELIC unica para dividas civis — formula antiga superada |
+| SELIC + IPCA-E cumulados | SELIC ja inclui juros + correcao (bis in idem — Tema 1.368/STJ) |
 
 ---
 

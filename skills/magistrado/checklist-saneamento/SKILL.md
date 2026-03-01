@@ -87,6 +87,8 @@ Resultado: [NAO HA QUESTOES PENDENTES / RESOLVIDAS CONFORME ACIMA]
 
 **Fonte CAPPD:** Cruzar Pedidos x Defesas do `peticao-analyzer` — o que nao foi impugnado e incontroverso (art. 341, CPC), o que foi impugnado e controvertido.
 
+**VERIFICAR ART. 356, CPC:** Se algum pedido ja esta maduro (prova exclusivamente documental + sem fatos controvertidos), considerar julgamento antecipado parcial ANTES de prosseguir ao saneamento dos demais. Ver secao "Julgamento Antecipado Parcial" abaixo.
+
 ### Inciso III — Distribuicao do Onus da Prova (art. 357, III c/c art. 373)
 
 ```
@@ -133,6 +135,12 @@ Resultado: [NAO HA QUESTOES PENDENTES / RESOLVIDAS CONFORME ACIMA]
        - Assistentes: indicar em 15 dias
        - Honorarios provisorios: R$ [VALOR]
        - Prazo do laudo: [PRAZO] dias
+       - REGIME DE CUSTEIO (verificar AJG):
+         ( ) Nenhuma parte tem AJG → requerente da prova adianta (art. 95, caput, CPC)
+         ( ) Autora com AJG, so reu requereu → reu adianta integralmente
+         ( ) Autora com AJG deve ratear → cota da autora via Estado/SEI (Ato 008/2021-TJES; tabela CNJ 232/2016)
+         ( ) Reu PJ alega AJG → PJ deve COMPROVAR insuficiencia (art. 99, §§2-3, CPC)
+         ATENCAO: Intimar PGE antes do pagamento (condicao de procedibilidade — Ato 008/2021-TJES)
    [  ] Depoimento pessoal de [PARTE] (art. 385, CPC)
    [  ] Inspecao judicial em [LOCAL] (art. 481, CPC)
 
@@ -251,6 +259,8 @@ Intimem-se as partes, pessoalmente ou por advogado.
 | Numero de testemunhas acima do limite | Max 3 por fato, 10 total (art. 357, §§6-7) |
 | Nao fixar honorarios periciais | Art. 465, §2 — fixar na nomeacao |
 | Omitir prazo do art. 357, §1 | Partes tem 5 dias para pedir esclarecimentos |
+| Deferir pericia sem verificar regime AJG | Verificar se ha AJG e aplicar hipotese correta (Ato 008/2021-TJES) |
+| Nao considerar art. 356 CPC antes de sanear | Se pedido ja esta maduro, julgar parcialmente antes de prosseguir |
 
 ---
 

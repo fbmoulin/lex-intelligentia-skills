@@ -87,7 +87,8 @@ verificacao nas fontes oficiais antes de uso profissional.
 |-----------|--------------------|---------|
 | Sumula 297/STJ | CDC aplica-se as instituicoes financeiras | [VERIFICAR enunciado completo] |
 | Sumula 382/STJ | Juros remuneratorios acima de 12% a.a. nao indicam, por si so, abusividade | [VERIFICAR enunciado completo] |
-| Sumula 541/STJ | Capitalizacao mensal de juros em contratos bancarios | [VERIFICAR enunciado completo] |
+| Sumula 539/STJ | Capitalizacao sub-anual de juros permitida no SFN pos-31/03/2000 (MP 2.170-36) | [VERIFICAR enunciado completo] |
+| Sumula 541/STJ | Taxa anual superior a 12x taxa mensal = capitalizacao efetiva comprovada | [VERIFICAR enunciado completo] |
 | Sumula 566/STJ | Tarifa de cadastro em contratos bancarios pos-Resolucao CMN 3.518/2007 | [VERIFICAR enunciado completo] |
 
 ### Direito do Consumidor
@@ -131,6 +132,8 @@ verificacao nas fontes oficiais antes de uso profissional.
 | Temas 618/619 | Tarifas bancarias: cadastro (licita pos-30/4/2008), avaliacao do bem (licita se efetivamente prestada) | [VERIFICAR tese completa] |
 | Tema 24 | Capitalizacao mensal de juros: admitida quando pactuada | [VERIFICAR tese completa] |
 | Tema 27 | Comissao de permanencia: nao pode ser cumulada com outros encargos | [VERIFICAR tese completa] |
+| Tema 972 | Venda casada de seguro em financiamento: ilicita se consumidor nao pode escolher seguradora (REsp 1.639.259/SP, Min. Sanseverino, 12/12/2018) | [VERIFICAR tese completa] |
+| Tema 1.368 | **SELIC como indice UNICO para dividas civis** — substitui 1%+IPCA-E. Vedada cumulacao SELIC+IPCA-E (REsp 2.199.164/PR e 2.070.882/RS, Min. Villas Boas Cueva, Corte Especial, 15/10/2025) | [VERIFICAR tese completa] |
 
 ### Direito do Consumidor
 
@@ -144,6 +147,7 @@ verificacao nas fontes oficiais antes de uso profissional.
 | Tema | Sintese orientativa | Status |
 |------|---------------------|--------|
 | Tema 983 | Termo inicial dos juros moratorios em indenizacao por dano moral | [VERIFICAR tese completa] |
+| Tema 1.368 | SELIC unica para dividas civis — dano moral: SELIC desde evento danoso (convergencia S.54+S.362). Endosso STF: RE 1.558.191/SP | [VERIFICAR tese completa] |
 
 ### Processo Civil
 
