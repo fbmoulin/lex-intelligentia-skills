@@ -308,11 +308,73 @@ o comprador quem deu causa ao desfazimento.
 [CONFIRMAR enunciado completo da Sumula 543/STJ]
 ```
 
+**Fundamentacao padrao — inadimplemento EXCLUSIVO do incorporador (atraso na entrega):**
+```
+[ATENCAO: Este bloco se aplica quando o atraso na entrega e imputavel
+exclusivamente ao incorporador. Nao se confunde com a hipotese de
+distrato por iniciativa do adquirente (art. 67-A, Lei 4.591/1964).]
+
+O art. 43-A da Lei 4.591/1964 (incluido pela Lei 13.786/2018) estabelece
+que o descumprimento do prazo de entrega, ultrapassado o periodo de
+tolerancia de 180 dias (art. 43-A, §1), autoriza o adquirente a resolver
+o contrato sem qualquer penalidade, com direito a restituicao integral
+dos valores pagos e a multa prevista em contrato.
+
+Ademais, o art. 67-A, §14, da mesma lei determina que, em caso de
+inadimplemento do incorporador, este ficara obrigado a indenizar o
+adquirente — confirmando que os percentuais de retencao de 25%/50%
+(art. 67-A, caput e §5) aplicam-se APENAS ao distrato por iniciativa
+ou culpa do ADQUIRENTE, nao do incorporador.
+[CONFIRMAR redacao exata dos arts. 43-A e 67-A, §14, Lei 4.591/1964]
+
+Restituicao integral — principio convergente:
+A Sumula 543/STJ, embora editada sob regime anterior, consagra o
+mesmo principio incorporado pelo legislador de 2018: havendo culpa
+exclusiva do promitente vendedor, a restituicao dos valores pagos
+pelo adquirente deve ser INTEGRAL, sem qualquer retencao.
+[CONFIRMAR enunciado completo da Sumula 543/STJ]
+
+Calculo (inadimplemento do incorporador):
+- Valor total pago pelo adquirente: R$ [valor]
+- Retencao aplicavel: ZERO (culpa exclusiva do incorporador)
+- Valor a restituir: R$ [valor total pago]
+- Correcao: SELIC unica desde a citacao (Tema 1.368/STJ)
+```
+
 **Observacao sobre alienacao fiduciaria:** Se o contrato possui clausula
 de alienacao fiduciaria REGISTRADA, o procedimento de execucao extrajudicial
 segue a Lei 9.514/97, que prevalece sobre o CDC (Tema 1.095/STJ). Neste
 caso, a via judicial so se justifica para controle de legalidade do
 procedimento extrajudicial. [VERIFICAR Tema 1.095]
+
+**Inversao da clausula penal moratoria (Tema 971/STJ):**
+```
+[Aplicavel quando o atraso na entrega e imputavel ao incorporador]
+
+O Superior Tribunal de Justica, no Tema 971 (REsp 1.614.721/DF),
+firmou tese vinculante no sentido de que, descumprido o prazo para
+entrega do imovel objeto de promessa de compra e venda (incluido o
+prazo de tolerancia), a clausula penal moratoria prevista no contrato
+para inadimplemento do adquirente deve ser invertida em favor deste,
+aplicando-se contra o incorporador inadimplente, no mesmo percentual
+contratual, por mes de atraso verificado.
+[CONFIRMAR tese completa do Tema 971/STJ]
+
+A natureza da clausula penal moratoria e PROPRIA — nao compensa nem
+substitui eventuais lucros cessantes (Tema 970/STJ, REsp 1.635.428/SC).
+Assim, o adquirente pode cumular: (i) clausula penal invertida; e
+(ii) lucros cessantes comprovados (ex: alugueis pagos por nao dispor
+do imovel), desde que demonstre tratar-se de verbas de natureza distinta.
+[CONFIRMAR tese completa do Tema 970/STJ]
+
+Calculo da clausula penal invertida:
+- Base: valor total pago pelo adquirente (R$ [valor])
+- Percentual: [X]% ao mes (mesmo percentual previsto no contrato
+  para mora do adquirente)
+- Periodo: [N] meses de atraso (apos o prazo de tolerancia)
+- Total: R$ [base x percentual x meses]
+- Correcao: SELIC unica desde cada mes de atraso (Tema 1.368/STJ)
+```
 
 ---
 
@@ -504,6 +566,49 @@ nao atinge adquirentes) aplica-se APENAS a hipoteca, NAO a alienacao
 fiduciaria. O STJ consolidou esta distincao em maio de 2025.
 [CONFIRMAR posicao atual do STJ sobre inaplicabilidade da S.308
 a alienacao fiduciaria]
+
+[Hipotese hibrida: alienacao fiduciaria + inadimplemento do INCORPORADOR]
+Quando a resolucao contratual e buscada pelo ADQUIRENTE em razao do
+inadimplemento do INCORPORADOR (atraso na entrega, vicio construtivo,
+etc.), o Tema 1.095/STJ NAO constitui obstaculo:
+
+O Tema 1.095 regula a prevalencia do PROCEDIMENTO DE EXECUCAO
+EXTRAJUDICIAL promovido pelo CREDOR FIDUCIARIO contra o DEVEDOR
+inadimplente. Na hipotese inversa — adquirente lesado pelo
+inadimplemento do incorporador — a via judicial de resolucao
+contratual segue as regras da Lei 13.786/2018 e do CDC.
+
+A alienacao fiduciaria registrada e CONSEQUENCIA ACESSORIA do
+contrato de incorporacao. Resolvido o contrato principal por culpa
+do incorporador, a garantia fiduciaria perde seu objeto.
+
+EFEITO REGISTRAL OBRIGATORIO: No dispositivo da sentenca que
+declarar resolvido o contrato com alienacao fiduciaria registrada,
+INCLUIR determinacao de cancelamento do registro da alienacao
+fiduciaria no Registro de Imoveis competente, sob pena de o
+adquirente permanecer vinculado a garantia de contrato ja extinto.
+[CONFIRMAR: verificar se ha exigencia de oficio ao RI ou se basta
+a averbacao do mandado judicial]
+```
+
+**Dispositivo padrao — procedencia (resolucao por culpa do incorporador com AF registrada):**
+```
+Ante o exposto, julgo PROCEDENTE o pedido formulado por [ADQUIRENTE]
+em face de [INCORPORADOR/CONSTRUTORA], para:
+(a) DECLARAR resolvido o contrato de promessa de compra e venda
+    [e o contrato acessorio de alienacao fiduciaria], por
+    inadimplemento imputavel exclusivamente a parte reu;
+(b) CONDENAR a parte reu a restituir ao autor o valor de
+    R$ [valor] (totalidade das parcelas pagas), acrescido de
+    SELIC unica desde a citacao (Tema 1.368/STJ);
+(c) DETERMINAR o cancelamento do registro da alienacao fiduciaria
+    constante da matricula n. [numero] do [X] Oficio de Registro
+    de Imoveis de [Comarca], mediante expedicao de mandado;
+(d) [demais verbas: danos morais, clausula penal invertida, etc.]
+
+[Custas e honorarios pelo reu — art. 85, §2, CPC]
+
+P.R.I.
 ```
 
 **Dispositivo padrao — procedencia (nulidade do procedimento):**
