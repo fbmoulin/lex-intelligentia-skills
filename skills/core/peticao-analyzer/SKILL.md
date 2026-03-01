@@ -118,6 +118,13 @@ ANALISE DA CONTESTACAO
 - Documentos juntados: [lista]
 - Requerimentos: [testemunhal / pericial / outra]
 
+[FATOS ADMITIDOS — ART. 341, CPC]
+(Fatos NAO impugnados especificamente pelo reu sao considerados
+admitidos e dispensam prova — onus de impugnacao especificada)
+- [Fato 1 admitido por ausencia de impugnacao]
+- [Fato 2 admitido]
+- [Fato 3 admitido]
+
 [RECONVENCAO]
 - Sim / Nao
 - Se sim: [pedidos reconvencionais]
@@ -264,7 +271,7 @@ ANALISE JUDICIAL:
 |------|------------|
 | Confundir causa de pedir fatica com juridica | Fatica = fatos; Juridica = normas e teses. Separar sempre no CAPPD |
 | Ignorar pedidos implicitos | Verificar se ha pedido de tutela antecipada, gratuidade, ou honorarios nao destacados |
-| Nao mapear fatos incontroversos | Fatos nao impugnados especificamente sao admitidos (art. 341, CPC) — listar separadamente |
+| Nao mapear fatos incontroversos | Fatos nao impugnados especificamente sao ADMITIDOS (art. 341, CPC) — preencher o campo [FATOS ADMITIDOS] obrigatoriamente |
 | Misturar analise de merito com preliminares | Preliminares primeiro (art. 337, CPC); merito so depois de superadas |
 | Ignorar reconvencao | Verificar se a contestacao contem pedido reconvencional (art. 343, CPC) |
 | Nao cruzar provas com pontos controvertidos | Cada ponto controvertido deve ter um meio de prova associado |

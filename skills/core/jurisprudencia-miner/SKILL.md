@@ -118,6 +118,51 @@ verificacao nas fontes oficiais antes de uso profissional.
 
 ---
 
+## Temas Repetitivos do STJ (art. 1.036, CPC)
+
+**IMPORTANCIA:** Temas Repetitivos vinculam todos os tribunais e juizos inferiores (art. 927, III, CPC). Sao hoje os precedentes de MAIOR impacto pratico no Judiciario brasileiro.
+
+**ATENCAO:** Os numeros e sinteses abaixo sao orientativos. SEMPRE verificar a tese firmada completa em https://processo.stj.jus.br/repetitivos/ antes de usar em pecas ou decisoes.
+
+### Direito Bancario
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Temas 618/619 | Tarifas bancarias: cadastro (licita pos-30/4/2008), avaliacao do bem (licita se efetivamente prestada) | [VERIFICAR tese completa] |
+| Tema 24 | Capitalizacao mensal de juros: admitida quando pactuada | [VERIFICAR tese completa] |
+| Tema 27 | Comissao de permanencia: nao pode ser cumulada com outros encargos | [VERIFICAR tese completa] |
+
+### Direito do Consumidor
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 622 | Negativacao indevida e dano moral: parametros de fixacao | [VERIFICAR tese completa] |
+| Tema 952 | Plano de saude: rol da ANS como referencia | [VERIFICAR tese completa] |
+
+### Responsabilidade Civil
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 983 | Termo inicial dos juros moratorios em indenizacao por dano moral | [VERIFICAR tese completa] |
+
+### Processo Civil
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 1.076 | Honorarios advocaticios: limites e fases (art. 85, CPC/2015) | [VERIFICAR tese completa] |
+
+### Como Pesquisar Temas Repetitivos
+
+1. Acesse https://processo.stj.jus.br/repetitivos/
+2. Pesquise por numero do tema OU por palavra-chave na tese
+3. Verifique o status: JULGADO (tese ja fixada) ou AFETADO (pendente de julgamento)
+4. Leia a tese firmada COMPLETA — nao confie em resumos
+5. Verifique se houve revisao de tese (art. 927, §4, CPC)
+
+**Dica de busca avancada:** No SCON do STJ, filtrar por "Recurso Repetitivo" no campo "Tipo de Julgamento" para encontrar apenas acordaos em sede de repetitivo.
+
+---
+
 ## Estrategias de Pesquisa por Situacao
 
 ### Situacao 1: "Preciso de jurisprudencia para fundamentar [tese X]"

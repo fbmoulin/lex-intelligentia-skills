@@ -264,6 +264,95 @@ de causalidade.
 
 ---
 
+## Juros de Mora e Correcao Monetaria — Termos Iniciais
+
+**ATENCAO:** O termo inicial dos juros de mora varia conforme a natureza da responsabilidade. Erro neste ponto e motivo frequente de embargos de declaracao.
+
+### Responsabilidade Extracontratual (ilicito civil, CDC, acidente)
+```
+Juros de mora: desde o EVENTO DANOSO (Sumula 54/STJ).
+[CONFIRMAR Sumula 54/STJ — "Os juros moratorios fluem a partir
+do evento danoso, em caso de responsabilidade extracontratual"]
+
+Correcao monetaria sobre dano MATERIAL: desde cada desembolso
+(Sumula 43/STJ — "Incide correcao monetaria sobre divida por
+ato ilicito a partir da data do efetivo prejuizo").
+[CONFIRMAR Sumula 43/STJ]
+
+Correcao monetaria sobre dano MORAL: desde o arbitramento
+(Sumula 362/STJ — "A correcao monetaria do valor da
+indenizacao do dano moral incide desde a data do
+arbitramento").
+[CONFIRMAR Sumula 362/STJ]
+```
+
+### Responsabilidade Contratual (inadimplemento de contrato)
+```
+Juros de mora: desde a CITACAO (art. 405, CC).
+
+Correcao monetaria: desde o vencimento da obrigacao.
+```
+
+### Fazenda Publica (EC 113/2021, art. 3)
+```
+Debitos judiciais contra a Fazenda Publica: aplica-se
+exclusivamente a taxa SELIC, que ja engloba juros de mora
+E correcao monetaria. Nao cumulam IPCA + juros separados.
+
+Termo inicial: desde a citacao (precatorios) ou desde o
+transito em julgado (RPV), conforme o caso.
+```
+
+### Indice de Correcao — Relacoes Privadas
+```
+Regra geral: IPCA-E (indice oficial de inflacao).
+NAO aplicar Selic em relacoes privadas (Selic e para
+Fazenda Publica — EC 113/2021).
+```
+
+---
+
+## Tratamento da Tutela Provisoria na Sentenca
+
+Quando houver pedido de tutela de urgencia (deferida ou indeferida antes da sentenca), INCLUIR tratamento expresso no dispositivo:
+
+### Se a tutela foi DEFERIDA e a sentenca e de procedencia
+```
+Confirmo a tutela de urgencia anteriormente deferida (fls. XX),
+que subsistira ate o transito em julgado, nos termos do
+art. 1.012, §1, V, do CPC.
+```
+
+### Se a tutela foi DEFERIDA e a sentenca e de improcedencia
+```
+Revogo a tutela de urgencia anteriormente deferida (fls. XX),
+cessando seus efeitos com a publicacao desta sentenca.
+```
+
+### Se a tutela foi INDEFERIDA e a sentenca e de procedencia
+```
+[Nao ha necessidade de mencionar a tutela indeferida — a
+sentenca de procedencia ja atende ao pedido. Caso haja
+interesse em eficacia imediata, fundamentar com art. 1.012,
+§1, CPC]
+```
+
+### Se houve pedido mas NAO foi apreciado
+```
+Quanto a tutela de urgencia requerida, julgo prejudicado o
+pedido ante o julgamento do merito da demanda.
+```
+
+### Recurso cabivel
+```
+Registre-se que a presente sentenca esta sujeita a recurso de
+apelacao, no prazo de 15 (quinze) dias uteis (art. 1.009, CPC),
+a ser dirigido ao Tribunal de Justica do Estado do Espirito
+Santo.
+```
+
+---
+
 ## Formulas para Honorarios Advocaticios (art. 85, CPC)
 
 **Regra geral:**

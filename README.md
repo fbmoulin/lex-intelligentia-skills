@@ -146,8 +146,9 @@ Contribuições são bem-vindas, especialmente para:
 
 | Documento | Conteúdo |
 |-----------|----------|
-| [METODOLOGIA-FIRAC-JB.md](./docs/METODOLOGIA-FIRAC-JB.md) | Metodologia de raciocínio jurídico adaptada para IA |
-| [GUIA-ANTI-ALUCINACAO.md](./docs/GUIA-ANTI-ALUCINACAO.md) | Protocolo para citação segura de jurisprudência |
+| [METODOLOGIA-FIRAC-JB.md](./docs/METODOLOGIA-FIRAC-JB.md) | Raciocínio jurídico em 5 etapas + exemplo prático + checklist de validação |
+| [GUIA-ANTI-ALUCINACAO.md](./docs/GUIA-ANTI-ALUCINACAO.md) | Protocolo de 3 níveis para citação segura + termos de busca por área |
+| [ARQUITETURA-LEX-INTELLIGENTIA.md](./docs/ARQUITETURA-LEX-INTELLIGENTIA.md) | Mapa de conexão entre as 17 skills + workflows completos + I/O de cada skill |
 
 ---
 

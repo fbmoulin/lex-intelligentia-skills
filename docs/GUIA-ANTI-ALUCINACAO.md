@@ -84,6 +84,110 @@ acerca de [TEMA]. Recomendo consultar diretamente:
 - `honorários advocatícios fases cumulação`
 - `negócio jurídico processual validade`
 
+### Família e Sucessões
+- `guarda compartilhada melhor interesse criança`
+- `alimentos binômio necessidade possibilidade`
+- `alienação parental caracterização consequências`
+- `divórcio partilha bens regime comunhão`
+- `inventário extrajudicial requisitos`
+- `usucapião familiar abandono do lar`
+
+### Penal
+- `dosimetria pena circunstâncias judiciais art 59`
+- `regime inicial cumprimento pena`
+- `substituição pena restritiva direitos`
+- `prisão preventiva fundamentação concreta`
+- `tráfico privilegiado redução pena`
+- `estelionato fraude eletrônica art 171`
+
+### Trabalhista
+- `vínculo empregatício requisitos subordinação`
+- `horas extras intervalo intrajornada`
+- `dano moral assédio ambiente trabalho`
+- `rescisão indireta hipóteses art 483 CLT`
+- `pejotização fraude vínculo empregatício`
+
+### Imobiliário
+- `despejo por falta de pagamento purgação mora`
+- `usucapião extraordinário requisitos prazo`
+- `promessa compra venda adjudicação compulsória`
+- `condomínio inadimplência taxa condominial`
+- `distrato imobiliário restituição valores`
+- `alienação fiduciária imóvel consolidação propriedade`
+
+### Administrativo
+- `improbidade administrativa dano ao erário`
+- `servidor público estabilidade demissão`
+- `concurso público preterição nomeação`
+- `responsabilidade civil estado omissão`
+
+---
+
+## Exemplos Práticos — Aplicação dos 3 Níveis
+
+### Exemplo Nível 1 — CONFIRMADO
+**Contexto:** Ação de indenização por negativação indevida.
+```
+Saída correta:
+"O STJ consolidou entendimento de que a inscrição indevida em
+cadastros restritivos gera dano moral in re ipsa, dispensada a
+prova de prejuízo concreto, conforme se verifica no julgamento
+do Tema Repetitivo 622 e na Súmula 385/STJ.
+[CONFIRMAR número exato do Tema e aplicabilidade da Súmula 385
+no site do STJ antes de citar]"
+```
+**Por que Nível 1:** Tese amplamente conhecida, repetida em milhares de julgados, com tema repetitivo catalogado.
+
+### Exemplo Nível 2 — PROVÁVEL
+**Contexto:** Ação revisional de contrato bancário com capitalização de juros.
+```
+Saída correta:
+"Há tendência jurisprudencial no STJ no sentido de que a
+capitalização mensal de juros é admitida desde que expressamente
+pactuada e o contrato seja posterior à MP 1.963-17/2000,
+sustentada no princípio da liberdade contratual e em decisões
+da 2ª Seção.
+[VERIFICAR no STJ: buscar por 'capitalização mensal juros
+contrato posterior MP 1963' — confirmar se há Tema Repetitivo
+específico antes de citar]"
+```
+**Por que Nível 2:** A tese é consistente com a jurisprudência conhecida, mas o número exato do recurso ou tema repetitivo não está disponível com segurança.
+
+### Exemplo Nível 3 — INCERTO
+**Contexto:** Responsabilidade civil por dano causado por IA autônoma.
+```
+Saída correta:
+"Não possuo informação segura sobre a posição atual do STJ
+acerca da responsabilidade civil por danos causados por
+sistemas de inteligência artificial autônoma. O tema é
+emergente e pode não ter jurisprudência consolidada.
+Recomendo consultar diretamente:
+- STJ: https://scon.stj.jus.br/SCON/ (buscar 'inteligência
+  artificial responsabilidade civil')
+- STF: https://portal.stf.jus.br/jurisprudencia/
+- Marco Legal da IA (PL 2338/2023 — verificar status)"
+```
+**Por que Nível 3:** Tema novo, sem jurisprudência consolidada. Afirmar posição seria alucinação.
+
+---
+
+## Integração com a Skill `jurisprudencia-miner`
+
+A skill `jurisprudencia-miner` aplica este protocolo automaticamente ao pesquisar precedentes:
+
+1. **Classificação automática:** Cada resultado de pesquisa recebe nível 1, 2 ou 3
+2. **Marcação explícita:** Tags `[CONFIRMAR]` ou `[VERIFICAR]` inseridas no output
+3. **Links de verificação:** URL do tribunal incluída para cada citação
+4. **Fallback transparente:** Se não encontrar precedente seguro, diz explicitamente (Nível 3)
+
+**Fluxo recomendado:**
+```
+jurisprudencia-miner (pesquisa)
+  → classifica nível de confiança
+  → sentenca-judicial-br (usa na fundamentação)
+  → revisor humano (confirma antes de assinar)
+```
+
 ## Regra de Ouro
 
 > **Uma citação verificada vale mais do que dez inventadas.**
