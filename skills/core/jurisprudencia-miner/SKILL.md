@@ -115,6 +115,41 @@ verificacao nas fontes oficiais antes de uso profissional.
 | Art. 489, §1, CPC | Requisitos de fundamentacao analitica | Lei — nao precisa verificar |
 | Art. 926, CPC | Dever de uniformizacao e coerencia | Lei — nao precisa verificar |
 
+### Direito Imobiliario
+
+| Referencia | Sintese orientativa | Status |
+|-----------|---------------------|---------|
+| Sumula 76/STJ | Compromisso de compra e venda sem registro nao dispensa interpelacao para constituicao em mora | [VERIFICAR enunciado completo] |
+| Sumula 84/STJ | Embargos de terceiro admissiveis com compromisso de compra e venda sem registro | [VERIFICAR enunciado completo] |
+| Sumula 239/STJ | Adjudicacao compulsoria nao exige registro do compromisso de compra e venda | [VERIFICAR enunciado completo] |
+| Sumula 308/STJ | Hipoteca entre construtora e agente financeiro nao vincula adquirentes das unidades | [VERIFICAR enunciado completo] |
+| Sumula 543/STJ | Na resolucao de promessa de compra e venda sujeita ao CDC, restituicao imediata dos valores pagos | [VERIFICAR enunciado completo] |
+| Sumula 602/STJ | CDC aplicavel a empreendimentos de cooperativas habitacionais | [VERIFICAR enunciado completo] |
+
+### Condominio
+
+| Referencia | Sintese orientativa | Status |
+|-----------|---------------------|---------|
+| Sumula 260/STJ | Convencao de condominio aprovada mas nao registrada tem eficacia entre condominos | [VERIFICAR enunciado completo] |
+| Sumula 449/STJ | Vaga de garagem com matricula propria nao e bem de familia | [VERIFICAR enunciado completo] |
+| Sumula 478/STJ | Credito condominial tem preferencia sobre o credito hipotecario | [VERIFICAR enunciado completo] |
+
+### Locacao
+
+| Referencia | Sintese orientativa | Status |
+|-----------|---------------------|---------|
+| Sumula 214/STJ | Fiador na locacao nao responde por obrigacoes decorrentes de aditamento ao qual nao anuiu | [VERIFICAR enunciado completo] |
+| Sumula 268/STJ | Fiador que nao integrou a acao de despejo nao responde pela execucao do julgado | [VERIFICAR enunciado completo] |
+| Sumula 332/STJ | Fianca prestada sem autorizacao de um dos conjuges: ineficacia total (nao apenas da meacao) | [VERIFICAR enunciado completo] |
+| Sumula 335/STJ | Valida a clausula de renuncia a indenizacao por benfeitorias e ao direito de retencao | [VERIFICAR enunciado completo] |
+| Sumula 549/STJ | Valida a penhora de bem de familia do fiador em contrato de locacao | [VERIFICAR enunciado completo] |
+
+### Usucapiao
+
+| Referencia | Sintese orientativa | Status |
+|-----------|---------------------|---------|
+| Sumula 11/STJ | Presenca da Uniao como interessada nao afasta competencia do foro de situacao do imovel para usucapiao | [VERIFICAR enunciado completo] |
+
 **Nota:** Foram removidas referencias com descricao incorreta da versao anterior desta skill. Ao pesquisar Sumulas em areas como Familia, Posse, Execucao — sempre consultar diretamente no site do STJ.
 
 ---
@@ -154,6 +189,39 @@ verificacao nas fontes oficiais antes de uso profissional.
 | Tema | Sintese orientativa | Status |
 |------|---------------------|--------|
 | Tema 1.076 | Honorarios advocaticios: limites e fases (art. 85, CPC/2015) | [VERIFICAR tese completa] |
+
+### Direito Imobiliario
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 938 | Comissao de corretagem e taxa SATI em compra de imovel na planta — prescricao trienal, transferencia valida se consumidor informado do preco total (REsp 1.551.956/SP) | [VERIFICAR tese completa] |
+| Tema 970 | Clausula penal moratoria por atraso na entrega de imovel tem natureza propria e nao compensa lucros cessantes (REsp 1.635.428/SC) | [VERIFICAR tese completa] |
+| Tema 971 | Inversao da clausula penal moratoria em desfavor da construtora/incorporadora inadimplente (REsp 1.614.721/DF) | [VERIFICAR tese completa] |
+| Tema 996 | Atraso na entrega de imovel: tolerancia de 180 dias valida, alugueis mensais como indenizacao, vedacao de juros de obra apos prazo (REsp 1.631.485/DF) | [VERIFICAR tese completa] |
+| Tema 1.002 | Juros de mora na resolucao de compra e venda por iniciativa do comprador — incidencia a partir do transito em julgado (REsp 1.740.911/DF) | [VERIFICAR tese completa] |
+| Tema 1.095 | Alienacao fiduciaria de imovel com registro: Lei 9.514/97 prevalece sobre CDC para procedimento de execucao extrajudicial (REsp 1.891.498/SP) | [VERIFICAR tese completa] |
+| Tema 1.113 | Base de calculo do ITBI — valor de mercado na data do fato gerador, nao vinculado ao valor venal do IPTU (REsp 1.937.821/SP) | [VERIFICAR tese completa] |
+| Tema 1.288 | Purgacao da mora apos consolidacao da propriedade em alienacao fiduciaria — limites pre e pos Lei 13.465/2017 | [VERIFICAR tese completa] |
+
+### Condominio
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 882 | Taxas de associacao de moradores/condominio de fato: nao vinculam proprietarios nao associados (RE 695.911/SP — STF com RG) | [VERIFICAR tese completa] |
+| Tema 886 | Legitimidade para cobranca de cotas condominiais: posse com ciencia do condominio basta (EM REVISAO — acompanhar) | [VERIFICAR tese completa] |
+| Tema 949 | Prescricao de cotas condominiais: 5 anos, art. 206, §5, I, CC — prestacao periodica (REsp 1.483.930/DF) | [VERIFICAR tese completa] |
+
+### Locacao
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 1091 | Penhorabilidade do bem de familia do fiador em contrato de locacao — abrange locacao residencial e comercial (RE 1.307.334/SP — STF com RG) | [VERIFICAR tese completa] |
+
+### Usucapiao
+
+| Tema | Sintese orientativa | Status |
+|------|---------------------|--------|
+| Tema 985 | Usucapiao extraordinaria: area inferior ao modulo urbano minimo nao impede reconhecimento (REsp 1.667.842/SC) | [VERIFICAR tese completa] |
 
 ### Como Pesquisar Temas Repetitivos
 

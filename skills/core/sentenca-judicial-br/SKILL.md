@@ -264,6 +264,283 @@ de causalidade.
 
 ---
 
+### 7. Distrato Imobiliario — Resolucao de Promessa de Compra e Venda
+
+**Questoes tipicas:**
+- Regime aplicavel: Lei 13.786/2018 (contratos celebrados apos 28/12/2018) vs. regime anterior (Sumula 543/STJ)
+- Retencao: 25% regra geral, 50% se o empreendimento tem patrimonio de afetacao
+- Alienacao fiduciaria registrada: Lei 9.514/97 prevalece sobre CDC (Tema 1.095/STJ)
+- Juros de mora na restituicao: desde o transito em julgado (Tema 1.002/STJ)
+- Hipoteca da construtora: nao vincula adquirentes (Sumula 308/STJ)
+
+**Fundamentacao padrao — regime pos-Lei 13.786/2018:**
+```
+Tratando-se de contrato de promessa de compra e venda celebrado apos
+28/12/2018, aplica-se a disciplina da Lei 13.786/2018, que regulamenta
+o distrato e a resolucao dos contratos de incorporacao imobiliaria.
+
+Nos termos do art. 67-A da Lei 4.591/1964 (incluido pela Lei 13.786/2018),
+em caso de desistencia ou resolucao por inadimplemento do adquirente,
+e licita a retencao de [25%/50%] dos valores pagos, conforme
+[o empreendimento nao esteja/esteja] submetido ao regime de patrimonio
+de afetacao (art. 67-A, §5).
+
+Calculo:
+- Valor total pago pelo adquirente: R$ [valor]
+- Percentual de retencao aplicavel: [25%/50%]
+- Valor retido: R$ [valor x percentual]
+- Valor a restituir: R$ [valor pago - valor retido]
+
+A restituicao sera realizada em parcela unica, no prazo de [30 dias apos
+o habite-se / 180 dias], corrigida pela SELIC desde o transito em julgado
+(Tema 1.002/STJ). [VERIFICAR tese completa do Tema 1.002]
+```
+
+**Fundamentacao padrao — regime anterior (Sumula 543/STJ):**
+```
+Em se tratando de contrato celebrado ANTES de 28/12/2018, aplica-se o
+entendimento consolidado na Sumula 543 do Superior Tribunal de Justica:
+na hipotese de resolucao de contrato de promessa de compra e venda de
+imovel sujeito ao CDC, deve haver a restituicao imediata das parcelas
+pagas pelo promitente comprador, integralmente, em caso de culpa
+exclusiva do promitente vendedor, ou parcialmente, caso tenha sido
+o comprador quem deu causa ao desfazimento.
+[CONFIRMAR enunciado completo da Sumula 543/STJ]
+```
+
+**Observacao sobre alienacao fiduciaria:** Se o contrato possui clausula
+de alienacao fiduciaria REGISTRADA, o procedimento de execucao extrajudicial
+segue a Lei 9.514/97, que prevalece sobre o CDC (Tema 1.095/STJ). Neste
+caso, a via judicial so se justifica para controle de legalidade do
+procedimento extrajudicial. [VERIFICAR Tema 1.095]
+
+---
+
+### 8. Condominio — Cobranca de Cotas Condominiais
+
+**Questoes tipicas:**
+- Natureza propter rem da obrigacao condominial (art. 1.345, CC)
+- Legitimidade passiva: quem tem posse com ciencia do condominio (Tema 886/STJ — EM REVISAO)
+- Prescricao quinquenal: 5 anos (Tema 949/STJ — art. 206, §5, I, CC)
+- Multa moratoria: 2% apos CC/2002 (art. 1.336, §1, CC)
+- Preferencia sobre credito hipotecario (Sumula 478/STJ)
+- Penhorabilidade do imovel: excecao a impenhorabilidade do bem de familia (art. 3, IV, Lei 8.009/90)
+
+**Fundamentacao padrao:**
+```
+A obrigacao de pagar as cotas condominiais tem natureza propter rem,
+acompanhando a coisa e vinculando quem quer que detenha a posse ou
+propriedade da unidade (art. 1.345 do Codigo Civil).
+
+[Se discutida a legitimidade:]
+Conforme entendimento do Superior Tribunal de Justica (Tema 886),
+a legitimidade para responder pela divida condominial recai sobre
+quem exerce a posse da unidade com ciencia do condominio, ainda que
+nao seja o proprietario registral. [VERIFICAR tese completa — Tema
+886 EM REVISAO]
+
+[Prescricao:]
+A pretensao de cobranca de cotas condominiais submete-se ao prazo
+prescricional de 5 (cinco) anos, por se tratar de divida liquida
+constante de instrumento particular — prestacao periodica (art. 206,
+§5, I, CC), conforme tese firmada no Tema 949/STJ.
+[VERIFICAR tese completa do Tema 949]
+
+[Multa moratoria:]
+A multa por inadimplemento das cotas condominiais, nos condominios
+regidos pelo Codigo Civil de 2002, nao pode exceder 2% sobre o
+debito (art. 1.336, §1, CC), independentemente do que disponha a
+convencao condominial.
+
+[Penhorabilidade:]
+O imovel objeto da cobranca, ainda que constitua bem de familia,
+pode ser penhorado para satisfacao do credito condominial, conforme
+excecao expressa do art. 3, IV, da Lei 8.009/90. Ademais, o credito
+condominial tem preferencia sobre o credito hipotecario (Sumula
+478/STJ). [CONFIRMAR Sumula 478]
+```
+
+**Dispositivo padrao:**
+```
+Ante o exposto, julgo PROCEDENTE o pedido formulado por [CONDOMINIO]
+em face de [REU], para CONDENAR o reu ao pagamento de:
+(a) cotas condominiais vencidas no periodo de [data inicio] a
+    [data fim], no valor total de R$ [valor], acrescidas de:
+    - multa moratoria de 2% sobre cada parcela (art. 1.336, §1, CC);
+    - juros de mora de 1% ao mes desde cada vencimento; e
+    - correcao monetaria [pela SELIC — Tema 1.368/STJ];
+(b) cotas condominiais que se vencerem no curso da acao ate a
+    efetiva quitacao (vincendas).
+
+Custas e honorarios advocaticios pelo reu, fixados em [X]% sobre o
+valor da condenacao (art. 85, §2, CPC).
+
+P.R.I.
+```
+
+---
+
+### 9. Locacao — Despejo por Falta de Pagamento
+
+**Questoes tipicas:**
+- Inadimplemento como causa de rescisao (art. 9, III, Lei 8.245/91)
+- Liminar de despejo: caução de 3 alugueis (art. 59, §1, Lei 8.245/91)
+- Fianca: fiador nao responde por aditamento sem anuencia (Sumula 214/STJ)
+- Fiador fora da acao de despejo: nao responde pela execucao (Sumula 268/STJ)
+- Fianca sem autorizacao do conjuge: ineficacia total (Sumula 332/STJ)
+- Benfeitorias: renuncia valida (Sumula 335/STJ) + distincao acessao vs. benfeitoria
+- Penhora do bem de familia do fiador: valida para locacao residencial e comercial (Tema 1091/STF)
+
+**Fundamentacao padrao:**
+```
+A falta de pagamento de alugueis e encargos da locacao constitui
+infração contratual e legal que autoriza a resolucao da locacao e
+o consequente despejo do inquilino, nos termos do art. 9, III, da
+Lei 8.245/91 (Lei de Locacoes).
+
+[Se houver pedido de liminar:]
+Quanto a liminar de despejo, o art. 59, §1, IX, da Lei 8.245/91
+autoriza a concessao de medida liminar para desocupacao em 15 dias,
+desde que prestada caucao no valor equivalente a 3 (tres) meses
+de aluguel, independentemente de audiencia da parte contraria.
+
+[Se houver fiador no polo passivo:]
+Sobre a responsabilidade do fiador, observa-se que:
+- O fiador nao responde por obrigacoes resultantes de aditamento
+  ao contrato ao qual nao anuiu (Sumula 214/STJ);
+  [CONFIRMAR Sumula 214]
+- O fiador que nao foi incluido na acao de despejo nao responde
+  pela execucao do julgado (Sumula 268/STJ);
+  [CONFIRMAR Sumula 268]
+- A fianca prestada sem autorizacao de um dos conjuges e
+  totalmente ineficaz (Sumula 332/STJ);
+  [CONFIRMAR Sumula 332]
+
+[Sobre benfeitorias:]
+A clausula contratual de renuncia a indenizacao por benfeitorias
+e ao direito de retencao e valida, conforme entendimento sumulado
+(Sumula 335/STJ). [CONFIRMAR Sumula 335]
+Todavia, a renuncia nao alcanca as ACESSOES (construcoes novas),
+que se distinguem das benfeitorias e podem gerar indenizacao
+independentemente de clausula contratual.
+```
+
+**Dispositivo padrao:**
+```
+Ante o exposto, julgo PROCEDENTE o pedido formulado por [LOCADOR]
+em face de [LOCATARIO] [e FIADOR, se for o caso], para:
+(a) DECLARAR rescindido o contrato de locacao do imovel situado
+    em [endereco completo];
+(b) DECRETAR o despejo do reu, fixando o prazo de 30 (trinta)
+    dias para desocupacao voluntaria (art. 63, §1, Lei 8.245/91);
+(c) CONDENAR o reu [e o fiador, solidariamente / nos limites da
+    fianca] ao pagamento dos alugueis e encargos vencidos e
+    impagos no valor de R$ [valor], acrescidos de [correcao
+    monetaria + multa contratual + juros de mora], bem como dos
+    alugueis vincendos ate a efetiva desocupacao.
+
+Custas e honorarios advocaticios pelo reu, fixados em [X]% sobre
+o valor da condenacao (art. 85, §2, CPC).
+
+P.R.I.
+```
+
+**Observacao sobre penhora do bem de familia do fiador:** O Supremo
+Tribunal Federal, no Tema 1091 (RE 1.307.334/SP), firmou tese de que
+e constitucional a penhora do bem de familia do fiador em contrato de
+locacao, abrangendo locacao residencial e comercial. [VERIFICAR tese
+completa do Tema 1091]
+
+---
+
+### 10. Alienacao Fiduciaria de Imovel — Nulidade/Revisao do Procedimento Extrajudicial
+
+**Questoes tipicas:**
+- Lei 9.514/1997: procedimento de execucao extrajudicial (arts. 26 e 27)
+- Tema 1.095/STJ: alienacao fiduciaria registrada — Lei 9.514 prevalece sobre CDC
+- Tema 1.288: purgacao da mora apos consolidacao — limites pre e pos Lei 13.465/2017
+- Sumula 308/STJ: NAO se aplica a alienacao fiduciaria (apenas hipoteca de construtora)
+- Intimacao pessoal do devedor: requisito essencial de validade (art. 26, §1, Lei 9.514/97)
+
+**Fundamentacao padrao:**
+```
+A alienacao fiduciaria de bem imovel, disciplinada pela Lei 9.514/1997,
+constitui garantia real em que o devedor fiduciante transfere a propriedade
+resolavel do imovel ao credor fiduciario ate o adimplemento integral da
+divida.
+
+[Procedimento extrajudicial — requisitos:]
+O procedimento de execucao extrajudicial da alienacao fiduciaria exige,
+como requisito essencial de validade:
+(i) registro do contrato no Registro de Imoveis;
+(ii) constituicao em mora do devedor por intermedio do Registro de
+     Imoveis (art. 26, §1, Lei 9.514/97);
+(iii) intimacao PESSOAL do devedor para purgacao da mora no prazo
+      de 15 dias; e
+(iv) consolidacao da propriedade em nome do credor fiduciario, com
+     pagamento do ITBI, seguida de leiloes publicos (art. 27).
+
+[Se alegada nulidade por vicio na intimacao:]
+A intimacao pessoal do devedor fiduciante e REQUISITO ESSENCIAL de
+validade do procedimento de execucao extrajudicial. A ausencia de
+intimacao ou intimacao por via inadequada acarreta nulidade de todo
+o procedimento de consolidacao e dos leiloes subsequentes.
+
+[Sobre purgacao da mora apos consolidacao:]
+O Superior Tribunal de Justica, no Tema 1.288, firmou entendimento
+sobre os limites da purgacao da mora apos a consolidacao da propriedade,
+distinguindo contratos anteriores e posteriores a Lei 13.465/2017.
+[VERIFICAR tese completa do Tema 1.288]
+
+[Prevalencia da Lei 9.514 sobre CDC:]
+Nos termos do Tema 1.095/STJ, quando a alienacao fiduciaria esta
+devidamente registrada, o procedimento de execucao extrajudicial
+segue a Lei 9.514/97, que prevalece como lei especial sobre o
+regime geral do CDC. [VERIFICAR tese completa do Tema 1.095]
+
+[ATENCAO — Sumula 308/STJ NAO se aplica:]
+A Sumula 308/STJ (hipoteca entre construtora e agente financeiro
+nao atinge adquirentes) aplica-se APENAS a hipoteca, NAO a alienacao
+fiduciaria. O STJ consolidou esta distincao em maio de 2025.
+[CONFIRMAR posicao atual do STJ sobre inaplicabilidade da S.308
+a alienacao fiduciaria]
+```
+
+**Dispositivo padrao — procedencia (nulidade do procedimento):**
+```
+Ante o exposto, julgo PROCEDENTE o pedido formulado por [DEVEDOR
+FIDUCIANTE] em face de [CREDOR FIDUCIARIO], para:
+(a) DECLARAR nulo o procedimento de execucao extrajudicial
+    realizado sobre o imovel matricula n. [numero], por vicio
+    na intimacao do devedor fiduciante;
+(b) DETERMINAR o cancelamento da consolidacao da propriedade
+    em nome do credor fiduciario junto ao [X] Oficio de Registro
+    de Imoveis de [Comarca];
+(c) RESTABELECER o contrato de alienacao fiduciaria em seus
+    termos originais, assegurado ao autor o direito de purgacao
+    da mora.
+
+[Custas e honorarios pelo reu — art. 85, §2, CPC]
+
+P.R.I.
+```
+
+**Dispositivo padrao — improcedencia (procedimento regular):**
+```
+Ante o exposto, julgo IMPROCEDENTE o pedido de [DEVEDOR FIDUCIANTE],
+por verificar que o procedimento de execucao extrajudicial observou
+todos os requisitos legais da Lei 9.514/1997, notadamente a regular
+intimacao pessoal do devedor (art. 26, §1), a consolidacao da
+propriedade (art. 26, §7) e a realizacao dos leiloes (art. 27).
+
+[Custas e honorarios pelo autor — art. 85, §2, CPC]
+[Se beneficiario de gratuidade: suspensao art. 98, §3, CPC]
+
+P.R.I.
+```
+
+---
+
 ## Juros de Mora e Correcao Monetaria — Termos Iniciais
 
 **ATENCAO:** O termo inicial dos juros de mora varia conforme a natureza da responsabilidade. Erro neste ponto e motivo frequente de embargos de declaracao.
