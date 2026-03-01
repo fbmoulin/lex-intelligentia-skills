@@ -3,7 +3,7 @@
 > O primeiro ecossistema de Agent Skills para o **Direito Brasileiro**.  
 > Desenvolvido por um juiz de direito, para magistrados, advogados e pesquisadores jurídicos.
 
-[![Skills](https://img.shields.io/badge/skills-17-blue?style=flat-square)](./skills)
+[![Skills](https://img.shields.io/badge/skills-21-blue?style=flat-square)](./skills)
 [![Língua](https://img.shields.io/badge/idioma-Português%20BR-green?style=flat-square)]()
 [![Compatível com](https://img.shields.io/badge/compatível%20com-Claude.ai%20·%20Claude%20Code%20·%20API-orange?style=flat-square)]()
 [![Licença](https://img.shields.io/badge/licença-MIT-lightgrey?style=flat-square)](./LICENSE)
@@ -33,6 +33,7 @@ Agent Skills são instruções modulares que ensinam ao Claude como executar tar
 | [`jurisprudencia-miner`](./skills/core/jurisprudencia-miner/) | Pesquisa de precedentes com protocolo anti-alucinação | `jurisprudência`, `súmula`, `tese STJ`, `precedente` |
 | [`dje-monitor`](./skills/core/dje-monitor/) | Extração e monitoramento de publicações em diários oficiais | `DJE`, `DOU`, `prazo processual`, `intimação` |
 | [`tese-juridica-validator`](./skills/core/tese-juridica-validator/) | Validação de argumentos em 5 dimensões contra precedentes | `validar argumento`, `minha tese é`, `tese sólida` |
+| [`calculadora-processual`](./skills/core/calculadora-processual/) | Tabelas de referência para juros, correção, honorários, custas e multas | `juros`, `correção monetária`, `SELIC`, `honorários`, `custas` |
 
 ### `magistrado/` — Específicas para a magistratura
 
@@ -42,6 +43,9 @@ Agent Skills são instruções modulares que ensinam ao Claude como executar tar
 | [`conciliacao-assistant`](./skills/magistrado/conciliacao-assistant/) | Estratégia de acordo baseada em precedentes + minuta de termo | `acordo`, `conciliação`, `ZOPA`, `CEJUSC` |
 | [`contrato-analyzer-br`](./skills/magistrado/contrato-analyzer-br/) | Análise de contratos com checklists por tipo | `contrato`, `cláusula abusiva`, `locação`, `financiamento` |
 | [`prompt-forge-juridico`](./skills/magistrado/prompt-forge-juridico/) | Gerador de prompts otimizados para automação jurídica | `prompt para`, `instrução para IA`, `template jurídico` |
+| [`despacho-generator`](./skills/magistrado/despacho-generator/) | 16+ modelos de despacho por fase processual com placeholders | `despacho`, `cite-se`, `intime-se`, `emende`, `ato ordinatório` |
+| [`checklist-saneamento`](./skills/magistrado/checklist-saneamento/) | Checklist completo art. 357 CPC + decisão saneadora modelo | `saneamento`, `saneador`, `pontos controvertidos`, `ônus da prova` |
+| [`relatorio-produtividade`](./skills/magistrado/relatorio-produtividade/) | Métricas CNJ (Metas 1/2/4), acervo, gargalos e plano de ação | `produtividade`, `Meta CNJ`, `acervo`, `congestionamento` |
 
 ### `pesquisador/` — Produção acadêmica e gestão do conhecimento
 
@@ -97,11 +101,17 @@ Copie o conteúdo do `SKILL.md` desejado e cole no `system` da sua requisição.
 ```
 PROCESSO JUDICIAL
       │
-      ├──→ peticao-analyzer ──────→ sentenca-judicial-br
-      │                                      │
-      ├──→ audiencia-analyzer ───────────────┘
+      ├──→ peticao-analyzer ──────→ checklist-saneamento ──→ sentenca-judicial-br
+      │         │                                                     │
+      │         └──→ despacho-generator                               │
+      │                                                               │
+      ├──→ audiencia-analyzer ───────────────────────────────────────┘
       │
       ├──→ dje-monitor ──────────→ agenda de prazos automática
+      │
+      ├──→ calculadora-processual ←── (referenciado por sentença, saneamento, despacho)
+      │
+      ├──→ relatorio-produtividade (standalone — métricas CNJ)
       │
       └──→ lex-document-ocr ──→ lex-rag-builder ──→ jurisprudencia-miner
                                         │
@@ -148,7 +158,7 @@ Contribuições são bem-vindas, especialmente para:
 |-----------|----------|
 | [METODOLOGIA-FIRAC-JB.md](./docs/METODOLOGIA-FIRAC-JB.md) | Raciocínio jurídico em 5 etapas + exemplo prático + checklist de validação |
 | [GUIA-ANTI-ALUCINACAO.md](./docs/GUIA-ANTI-ALUCINACAO.md) | Protocolo de 3 níveis para citação segura + termos de busca por área |
-| [ARQUITETURA-LEX-INTELLIGENTIA.md](./docs/ARQUITETURA-LEX-INTELLIGENTIA.md) | Mapa de conexão entre as 17 skills + workflows completos + I/O de cada skill |
+| [ARQUITETURA-LEX-INTELLIGENTIA.md](./docs/ARQUITETURA-LEX-INTELLIGENTIA.md) | Mapa de conexão entre as 21 skills + workflows completos + I/O de cada skill |
 
 ---
 

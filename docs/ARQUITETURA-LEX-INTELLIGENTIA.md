@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-O ecossistema Lex Intelligentia é composto por **17 skills** organizadas em 5 categorias. Cada skill é autônoma (pode ser usada isoladamente), mas o valor máximo emerge quando combinadas em **workflows completos**.
+O ecossistema Lex Intelligentia é composto por **21 skills** organizadas em 5 categorias. Cada skill é autônoma (pode ser usada isoladamente), mas o valor máximo emerge quando combinadas em **workflows completos**.
 
 Este documento descreve como as skills se conectam, em que ordem usá-las, e quais dados fluem entre elas.
 
@@ -29,16 +29,22 @@ Este documento descreve como as skills se conectam, em que ordem usá-las, e qua
                   peticao-analyzer ◄───────────────┘
                     (CAPPD)                    (prazos)
                          │
-              ┌──────────┼──────────┐
-              ▼          ▼          ▼
-   jurisprudencia   tese-juridica  conciliacao
-      -miner         -validator    -assistant
-   (3 Níveis)      (5 dimensões)  (ZOPA/BATNA)
-              │          │
-              └────┬─────┘
-                   ▼
-          sentenca-judicial-br
+              ┌──────────┼──────────┬──────────────┐
+              ▼          ▼          ▼              ▼
+   jurisprudencia   tese-juridica  conciliacao  checklist-saneamento
+      -miner         -validator    -assistant      (art.357 CPC)
+   (3 Níveis)      (5 dimensões)  (ZOPA/BATNA)       │
+              │          │                            │
+              └────┬─────┘                            │
+                   ▼                                  │
+          sentenca-judicial-br ◄───────────────────────┘
               (FIRAC-JB)
+                   │
+                   ├──→ calculadora-processual (juros/correção/honorários)
+                   │
+                   ├──→ despacho-generator (despachos por fase)
+                   │
+                   ├──→ relatorio-produtividade (métricas CNJ)
                    │
          ┌─────────┼──────────┐
          ▼         ▼          ▼
@@ -169,12 +175,54 @@ Passo 3 → academic-writer-br
 
 ---
 
+### Workflow 6 — Saneamento Completo
+
+**Cenário:** Magistrado precisa sanear processo após fase postulatória.
+
+```
+Passo 1 → peticao-analyzer (modo consolidado)
+          Input:  Petição inicial + contestação
+          Output: CAPPD completo + quadro Pedidos vs Defesas + fatos incontroversos
+
+Passo 2 → checklist-saneamento
+          Input:  CAPPD (Passo 1) + preliminares pendentes
+          Output: Decisão saneadora completa (5 incisos art. 357)
+
+Passo 3 → calculadora-processual (se necessário)
+          Input:  Tipo de perícia/prova
+          Output: Honorários periciais de referência
+
+Passo 4 → Revisão humana
+          Checklist: cada inciso do art. 357 preenchido e fundamentado
+```
+
+---
+
+### Workflow 7 — Despacho Rápido (Rotina Diária)
+
+**Cenário:** Gabinete precisa despachar processos em lote.
+
+```
+Passo 1 → peticao-analyzer (resumo)
+          Input:  Última petição juntada
+          Output: Tipo de providência necessária
+
+Passo 2 → despacho-generator
+          Input:  Fase processual + tipo de despacho identificado
+          Output: Despacho padronizado com placeholders preenchidos
+
+Passo 3 → Revisão humana
+          Validar: artigos corretos, prazos, nomes das partes
+```
+
+---
+
 ## Categorias e Público-Alvo
 
 | Categoria | Público | Skills |
 |-----------|---------|--------|
-| `core/` | Qualquer profissional do Direito | sentenca-judicial-br, peticao-analyzer, jurisprudencia-miner, dje-monitor, tese-juridica-validator |
-| `magistrado/` | Juízes e assessores | audiencia-analyzer, conciliacao-assistant, contrato-analyzer-br, prompt-forge-juridico |
+| `core/` | Qualquer profissional do Direito | sentenca-judicial-br, peticao-analyzer, jurisprudencia-miner, dje-monitor, tese-juridica-validator, calculadora-processual |
+| `magistrado/` | Juízes e assessores | audiencia-analyzer, conciliacao-assistant, contrato-analyzer-br, prompt-forge-juridico, despacho-generator, checklist-saneamento, relatorio-produtividade |
 | `pesquisador/` | Acadêmicos e pós-graduandos | academic-writer-br, lex-pkm-juridico |
 | `automacao/` | Desenvolvedores de legaltech | lex-document-ocr, lex-rag-builder, n8n-workflow-generator, n8n-legal-config |
 | `criacao/` | Produtores de conteúdo jurídico | social-content-juridico, ficao-digital-juvenil |
@@ -202,6 +250,10 @@ Passo 3 → academic-writer-br
 | `prompt-forge-juridico` | Caso de uso jurídico | Prompt otimizado para LLM | qualquer skill |
 | `n8n-workflow-generator` | Fluxo desejado | Workflow n8n JSON | n8n-legal-config |
 | `n8n-legal-config` | Node n8n | Configuração otimizada | — (configuração) |
+| `despacho-generator` | Fase processual + tipo de despacho | Despacho com placeholders preenchidos | sentenca (quando evolui para decisão) |
+| `checklist-saneamento` | CAPPD (peticao-analyzer) | Decisão saneadora completa (art. 357) | sentenca (delimita âmbito) |
+| `calculadora-processual` | Tipo de obrigação + partes | Tabela com índice/taxa/termo/fundamentação | sentenca, checklist-saneamento, despacho |
+| `relatorio-produtividade` | Dados do sistema processual | Relatório CNJ com diagnóstico + plano de ação | — (entrega final) |
 
 ---
 
