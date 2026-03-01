@@ -136,6 +136,80 @@ admitidos e dispensam prova — onus de impugnacao especificada)
 
 ---
 
+## Analise Consolidada — Peticao Inicial + Contestacao
+
+Para uso direto pelo magistrado: visao unificada que cruza os argumentos de ambas as partes e identifica o que precisa ser decidido.
+
+### Output Estruturado
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ANALISE CONSOLIDADA — PARA DECISAO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[PARTES E OBJETO]
+- Autor: [nome + qualificacao]
+- Reu: [nome + qualificacao]
+- Natureza: [tipo da acao]
+- Valor da causa: R$ [valor]
+
+[PEDIDOS vs. DEFESAS — QUADRO COMPARATIVO]
+| # | Pedido do Autor | Defesa do Reu | Questao a decidir |
+|---|----------------|---------------|-------------------|
+| 1 | [Pedido 1]     | [Defesa 1]    | [Ponto juridico]  |
+| 2 | [Pedido 2]     | [Defesa 2]    | [Ponto juridico]  |
+| 3 | [Pedido 3]     | [Defesa 3]    | [Ponto juridico]  |
+
+[PRELIMINARES A RESOLVER]
+| Preliminar | Suscitada por | Fundamento | Procedencia provavel |
+|-----------|---------------|------------|---------------------|
+| [Tipo]    | [Reu/oficio]  | [Sintese]  | [Sim/Nao — motivo]  |
+
+[FATOS INCONTROVERSOS — ART. 341, CPC]
+(Dispensam prova — podem ser usados diretamente na fundamentacao)
+1. [Fato admitido por ambas as partes]
+2. [Fato nao impugnado especificamente pelo reu]
+3. [Fato nao impugnado especificamente pelo reu]
+
+[FATOS CONTROVERTIDOS — NECESSITAM PROVA]
+| # | Fato | Autor alega | Reu alega | Prova necessaria |
+|---|------|-------------|-----------|-----------------|
+| 1 | [Fato] | [Versao] | [Versao] | [Meio de prova] |
+| 2 | [Fato] | [Versao] | [Versao] | [Meio de prova] |
+
+[PROVAS PRODUZIDAS E PENDENTES]
+- Documentais do autor: [lista resumida]
+- Documentais do reu: [lista resumida]
+- Pericia: [realizada / pendente / dispensada]
+- Testemunhal: [ouvidas X testemunhas / pendente]
+
+[QUESTOES JURIDICAS CENTRAIS]
+1. [Questao 1]: [norma aplicavel] — [posicao aparente do STJ/STF]
+2. [Questao 2]: [norma aplicavel] — [posicao aparente do STJ/STF]
+
+[SUGESTAO DE ORDEM DE JULGAMENTO]
+1. Preliminar(es): [resolver primeiro]
+2. Merito — questao [X]: [resolver antes de Y por ser prejudicial]
+3. Merito — questao [Y]: [resolver por ultimo]
+4. Pedidos acessorios: [honorarios, custas, tutela]
+
+[SINTESE PARA O MAGISTRADO]
+[3-5 linhas com o nucleo do conflito, os pontos-chave a decidir
+e eventuais alertas processuais]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Quando Usar a Analise Consolidada
+
+- **Apos ler** peticao inicial E contestacao
+- **Antes de redigir** sentenca ou despacho saneador
+- **Quando o processo** ja esta pronto para julgamento (sem provas pendentes)
+- **Para preparar** a pauta de decisoes em lote
+
+**Nota:** Esta analise substitui a necessidade de fazer duas analises separadas. Se apenas uma peca estiver disponivel, usar os templates individuais acima.
+
+---
+
 ## Mapeamento de Pontos Controvertidos
 
 Para uso no despacho saneador (art. 357, CPC):

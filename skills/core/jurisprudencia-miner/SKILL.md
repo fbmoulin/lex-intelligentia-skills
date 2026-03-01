@@ -203,6 +203,61 @@ pecas processuais ou decisoes.
 3. Identificar se STJ/STF ja pacificou (Sumula, repetitivo, RG) ou se ha IRDR pendente
 4. Recomendar posicao mais segura para o caso concreto
 
+**Template de output — Divergencia Jurisprudencial:**
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[DIVERGENCIA] — [Tema da divergencia]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[STATUS DA QUESTAO]
+( ) PACIFICADA — Sumula/Repetitivo/RG fixou tese
+( ) DIVERGENTE — Correntes coexistem sem pacificacao
+( ) EM AFETACAO — Tema afetado para julgamento (pendente)
+
+[CORRENTE 1 — descricao da tese]
+- Fundamento: [norma/principio que sustenta]
+- Adotada por: [tribunais/turmas/secoes]
+- Referencia: [Sumula, Tema, acordao-lider] — [VERIFICAR]
+
+[CORRENTE 2 — descricao da tese]
+- Fundamento: [norma/principio que sustenta]
+- Adotada por: [tribunais/turmas/secoes]
+- Referencia: [acordao-lider, se houver] — [VERIFICAR]
+
+[CORRENTE 3 — se houver]
+- [mesma estrutura]
+
+[INCIDENTE PENDENTE]
+- IRDR: [numero / tribunal / status] — [VERIFICAR]
+- IAC: [numero / tribunal / status] — [VERIFICAR]
+- Tema Repetitivo afetado: [numero / status] — [VERIFICAR]
+- Repercussao Geral: [Tema / status] — [VERIFICAR]
+(Se nenhum: "Nao ha incidente de uniformizacao pendente identificado")
+
+[TENDENCIA ATUAL]
+[Qual corrente vem prevalecendo nos julgados mais recentes?
+Houve virada recente? Qual a composicao atual do orgao
+julgador competente?]
+
+[RECOMENDACAO PARA O CASO]
+- Posicao MAIS SEGURA: [Corrente X] — porque [justificativa]
+- Risco de adotar Corrente Y: [qual o risco pratico —
+  reforma em grau recursal, embargos de divergencia, etc.]
+
+[COMO PESQUISAR A POSICAO ATUALIZADA]
+- [link de busca especifico para o tema]
+- Termos sugeridos: "[palavras-chave]"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+**Quando marcar [DIVERGENCIA]:**
+- Quando duas ou mais Turmas do STJ divergem sobre o mesmo ponto
+- Quando TJs de estados diferentes adotam posicoes opostas
+- Quando ha mudanca recente de entendimento sem Sumula/Repetitivo
+- Quando a parte invoca precedente que contraria a posicao majoritaria
+
+**IMPORTANTE:** A existencia de divergencia NAO dispensa o juiz de decidir. O marcador [DIVERGENCIA] sinaliza que o tema exige fundamentacao reforçada (art. 489, §1, VI, CPC) e que a decisao pode ser objeto de recurso qualificado (embargos de divergencia, IRDR).
+
 ### Situacao 3: "Qual a evolucao jurisprudencial sobre [tema]?"
 
 **Processo:**
@@ -210,6 +265,48 @@ pecas processuais ou decisoes.
 2. Reviravolta jurisprudencial — indicar quando houve overruling
 3. Estado atual consolidado
 4. Tendencias identificadas nos julgamentos recentes
+
+---
+
+## Parametros Indenizatorios — Tabela de Referencia por Tipo de Dano
+
+**ATENCAO:** Os valores abaixo sao faixas ORIENTATIVAS baseadas em tendencias jurisprudenciais. NAO sao vinculantes. SEMPRE verificar os parametros atualizados do tribunal local (TJ do estado) e a jurisprudencia recente do STJ antes de usar como referencia. Os valores devem ser ajustados conforme as circunstancias do caso concreto (art. 944, CC).
+
+### Dano Moral — Faixas por Tipo de Evento
+
+| Tipo de dano | Faixa orientativa | Fatores de ajuste | Status |
+|-------------|-------------------|-------------------|--------|
+| **Negativacao indevida** (sem preexistente) | R$ 5.000 a R$ 20.000 | Duracao, reincidencia do ofensor, repercussao | [VERIFICAR TJ local + Tema 622/STJ] |
+| **Negativacao indevida** (com preexistente) | Indenizacao AFASTADA | Sumula 385/STJ — ressalvado cancelamento | [VERIFICAR Sumula 385/STJ] |
+| **Falha em servico essencial** (agua, energia, telecom) | R$ 3.000 a R$ 15.000 | Duracao da falha, dano concreto, vulnerabilidade | [VERIFICAR TJ local] |
+| **Plano de saude — negativa de cobertura** | R$ 10.000 a R$ 30.000 | Urgencia do procedimento, risco de vida | [VERIFICAR TJ local + Tema 952/STJ] |
+| **Atraso/extravio de bagagem** (aereo) | R$ 5.000 a R$ 15.000 | Duração viagem, itens perdidos, Convenção Montreal | [VERIFICAR STJ + ANAC] |
+| **Acidente de transito — lesao leve** | R$ 5.000 a R$ 20.000 | Gravidade da lesao, tempo de recuperacao | [VERIFICAR TJ local] |
+| **Acidente de transito — lesao grave/invalidez** | R$ 30.000 a R$ 200.000 | Grau de invalidez, idade, profissao | [VERIFICAR TJ local + STJ] |
+| **Morte de familiar** (pai/mae/filho) | R$ 100.000 a R$ 500.000 | Dependencia economica, idade, circunstancias | [VERIFICAR STJ] |
+| **Erro medico — dano estetico** | R$ 20.000 a R$ 100.000 | Visibilidade, reversibilidade, parte do corpo | [VERIFICAR TJ local] |
+| **Protesto indevido de titulo** | R$ 5.000 a R$ 15.000 | Valor do titulo, repercussao, reincidencia | [VERIFICAR TJ local] |
+| **Cobranca vexatoria** (art. 42, CDC) | R$ 3.000 a R$ 10.000 | Local, publicidade, frequencia | [VERIFICAR TJ local] |
+
+### Dano Material — Criterios de Calculo
+
+| Tipo | Criterio | Fundamento |
+|------|----------|------------|
+| **Danos emergentes** | Valor efetivamente desembolsado | Art. 402, CC — comprovacao documental |
+| **Lucros cessantes** | Renda comprovada x periodo de privacao | Art. 402, CC — media mensal comprovada |
+| **Pensionamento por morte** | 2/3 da renda do falecido ate 65 anos (ou expectativa de vida) | Jurisprudencia STJ — deduzida parcela pessoal (1/3) |
+| **Pensionamento por invalidez** | Proporcional ao grau de reducao da capacidade | Laudo pericial + tabela DPVAT/SUSEP como referencia |
+
+### Criterios de Fixacao (art. 944, CC)
+
+Ao fixar o quantum, fundamentar com base em:
+1. **Gravidade da conduta** do ofensor (dolo, culpa grave, culpa leve)
+2. **Extensao do dano** sofrido pela vitima
+3. **Condicao economica** das partes (vedado enriquecimento sem causa)
+4. **Carater pedagogico-preventivo** (especialmente contra reincidentes)
+5. **Proporcionalidade e razoabilidade** (parametro constitucional)
+
+**Nota:** O paragrafo unico do art. 944, CC permite ao juiz REDUZIR equitativamente a indenizacao quando houver excessiva desproporcao entre a gravidade da culpa e o dano.
 
 ---
 

@@ -293,15 +293,65 @@ Juros de mora: desde a CITACAO (art. 405, CC).
 Correcao monetaria: desde o vencimento da obrigacao.
 ```
 
-### Fazenda Publica (EC 113/2021, art. 3)
-```
-Debitos judiciais contra a Fazenda Publica: aplica-se
-exclusivamente a taxa SELIC, que ja engloba juros de mora
-E correcao monetaria. Nao cumulam IPCA + juros separados.
+### Fazenda Publica — EC 113/2021 (art. 3)
 
-Termo inicial: desde a citacao (precatorios) ou desde o
-transito em julgado (RPV), conforme o caso.
+**ATENCAO:** A EC 113/2021 (publicada em 09/12/2021) alterou profundamente o regime de atualizacao de debitos judiciais contra a Fazenda Publica. O regime anterior (IPCA-E + juros de mora separados) foi substituido pela SELIC unica.
+
 ```
+REGIME ATUAL (apos 09/12/2021):
+Debitos judiciais contra a Fazenda Publica: aplica-se
+EXCLUSIVAMENTE a taxa SELIC, que ja ENGLOBA juros de mora
+E correcao monetaria. Nao se cumulam IPCA + juros separados.
+```
+
+**Regras de transicao:**
+```
+PERIODO ANTERIOR a 09/12/2021:
+- Correcao monetaria: IPCA-E (Tema 810/STF para Fazenda Federal;
+  Tema 905/STJ para Fazenda Estadual/Municipal)
+  [VERIFICAR teses completas dos Temas 810 e 905]
+- Juros de mora: poupanca (art. 1-F, Lei 9.494/97, com redacao
+  da Lei 11.960/2009, declarada parcialmente inconstitucional
+  pelo STF nas ADIs 4357 e 4425)
+  [VERIFICAR posicao atualizada do STF]
+
+PERIODO POSTERIOR a 09/12/2021:
+- Indice unico: SELIC (engloba juros + correcao)
+- NAO cabe aplicar IPCA-E + juros separados neste periodo
+```
+
+**Termo inicial dos juros:**
+```
+- Debitos de natureza tributaria: desde o pagamento indevido
+- Debitos de natureza nao-tributaria: desde a citacao
+  (art. 405, CC, aplicavel subsidiariamente)
+```
+
+**Template de dispositivo — Fazenda Publica:**
+```
+[...] condeno a Fazenda Publica [Municipal/Estadual/Federal]
+ao pagamento de R$ [valor], acrescido de:
+(a) correcao monetaria pelo IPCA-E e juros de mora conforme
+    [indice aplicavel] desde [termo inicial] ate 08/12/2021; e
+(b) a partir de 09/12/2021, incidencia exclusiva da taxa SELIC,
+    nos termos do art. 3 da EC 113/2021, que engloba juros de
+    mora e correcao monetaria.
+
+Nos termos do art. 100 da CF, o pagamento sera realizado por
+[precatorio / requisicao de pequeno valor — RPV], observado o
+limite de [X] salarios minimos para RPV no ambito [municipal/
+estadual/federal].
+```
+
+**Precatorio vs. RPV — Limites:**
+
+| Ente | Limite RPV | Fundamento |
+|------|-----------|------------|
+| Uniao | 60 salarios minimos | Art. 17, §1, Lei 10.259/2001 |
+| Estados/DF | 40 salarios minimos (regra geral, pode variar) | Art. 87, I, ADCT (verificar lei estadual) |
+| Municipios | 30 salarios minimos (regra geral, pode variar) | Art. 87, II, ADCT (verificar lei municipal) |
+
+[VERIFICAR limites atualizados — estados e municipios podem fixar limites proprios por lei]
 
 ### Indice de Correcao — Relacoes Privadas
 ```
@@ -372,6 +422,94 @@ do CPC/2015:
 - Ate 200 salarios minimos: [X]% (entre 10% e 20%)
 - De 200 a 2.000 SM: [Y]% (entre 8% e 10%)
 [...]
+```
+
+---
+
+## Sucumbencia Reciproca — Calculo e Reparticao (art. 86, CPC)
+
+Quando a sentenca for de **procedencia parcial**, o juiz deve calcular a proporcao de sucumbencia de cada parte e distribuir honorarios e custas proporcionalmente.
+
+### Metodologia de Calculo
+
+**Passo 1 — Listar TODOS os pedidos formulados pelo autor:**
+```
+| # | Pedido | Valor estimado | Resultado |
+|---|--------|----------------|-----------|
+| 1 | [Pedido 1] | R$ [valor] | PROCEDENTE |
+| 2 | [Pedido 2] | R$ [valor] | IMPROCEDENTE |
+| 3 | [Pedido 3] | R$ [valor] | PROCEDENTE |
+| 4 | [Pedido 4] | R$ [valor] | PROCEDENTE EM PARTE |
+```
+
+**Passo 2 — Calcular a proporcao:**
+```
+Valor total dos pedidos: R$ [soma de todos]
+Valor acolhido: R$ [soma dos procedentes + parcial]
+Proporcao do AUTOR (venceu): [valor acolhido / valor total] = X%
+Proporcao do REU (venceu): [1 - X%] = Y%
+```
+
+**Passo 3 — Aplicar a proporcao aos honorarios e custas:**
+```
+Honorarios: cada parte pagara ao advogado da parte contraria
+na proporcao de sua sucumbencia.
+- Reu paga ao advogado do autor: [X]% x [base de calculo]
+- Autor paga ao advogado do reu: [Y]% x [base de calculo]
+Custas: repartidas na mesma proporcao ([X]% autor, [Y]% reu).
+```
+
+### Hipoteses Especiais
+
+| Situacao | Regra | Fundamento |
+|----------|-------|------------|
+| **Sucumbencia minima do autor** | Reu arca com totalidade dos honorarios e custas | Art. 86, paragrafo unico, CPC |
+| **Sucumbencia reciproca equivalente** | Repartir igualmente (50/50) | Art. 86, caput, CPC |
+| **Pedido sem valor certo** (dano moral) | Usar o valor ARBITRADO na sentenca como parametro | Jurisprudencia STJ |
+| **Autor beneficiario de gratuidade** | Obrigacao de pagar honorarios ao advogado do reu fica SUSPENSA (art. 98, §3, CPC) por 5 anos | Art. 98, §3, CPC |
+
+### Templates de Dispositivo
+
+**Sucumbencia reciproca proporcional:**
+```
+Diante da procedencia parcial dos pedidos, reconheco a
+sucumbencia reciproca das partes na proporcao de [X]% para
+o reu e [Y]% para o autor, considerando que dos R$ [valor
+total] pedidos, foram acolhidos R$ [valor acolhido].
+
+Condeno o reu ao pagamento de honorarios advocaticios ao
+patrono do autor, fixados em [Z]% sobre o valor da
+condenacao (R$ [valor acolhido]), nos termos do art. 85,
+§2, do CPC.
+
+Condeno o autor ao pagamento de honorarios advocaticios ao
+patrono do reu, fixados em [Z]% sobre o valor dos pedidos
+rejeitados (R$ [valor rejeitado]), nos termos do art. 85,
+§2, do CPC. [Se beneficiario de gratuidade: "Tal obrigacao
+fica sob condicao suspensiva de exigibilidade, nos termos
+do art. 98, §3, do CPC, pelo prazo de 5 (cinco) anos."]
+
+Custas processuais repartidas na proporcao de [X]% para o
+reu e [Y]% para o autor. [Se gratuidade: observar art. 98,
+§3, CPC]
+```
+
+**Sucumbencia minima do autor:**
+```
+Considerando que o autor decaiu de parte MINIMA do pedido
+(apenas [detalhar — ex: quantum do dano moral reduzido de
+R$ 15.000 para R$ 10.000]), condeno o reu ao pagamento
+integral dos honorarios advocaticios, fixados em [Z]%
+sobre o valor da condenacao, e das custas processuais, nos
+termos do art. 86, paragrafo unico, do CPC.
+```
+
+**Vedacao de compensacao (art. 85, §14, CPC):**
+```
+IMPORTANTE: Os honorarios advocaticios sao direito do
+ADVOGADO (art. 85, §14, CPC) e NAO podem ser compensados
+entre si. Cada parte paga diretamente ao advogado da parte
+contraria na proporcao fixada.
 ```
 
 ---
