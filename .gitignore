@@ -1,0 +1,25 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Temporários
+*.tmp
+*.log
+__pycache__/
+*.pyc
+
+# Dados sensíveis (nunca commitar)
+.env
+*.env
+secrets.json
+credentials.json
+
+# Node (se scripts forem adicionados)
+node_modules/
