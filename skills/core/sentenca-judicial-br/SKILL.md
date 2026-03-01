@@ -420,6 +420,17 @@ pode ser penhorado para satisfacao do credito condominial, conforme
 excecao expressa do art. 3, IV, da Lei 8.009/90. Ademais, o credito
 condominial tem preferencia sobre o credito hipotecario (Sumula
 478/STJ). [CONFIRMAR Sumula 478]
+
+[Clausula locaticia de transferencia — inoponibilidade ao condominio:]
+Eventual clausula do contrato de locacao que atribua ao locatario a
+responsabilidade pelo pagamento das cotas condominiais NAO e oponivel
+ao condominio. A obrigacao propter rem vincula o proprietario perante
+o condominio, independentemente de ajustes internos entre locador e
+locatario (relatividade dos contratos — art. 421, CC c/c art. 1.345, CC).
+Assim, o condominio pode cobrar diretamente do proprietario, que
+dispora de acao regressiva contra o locatario inadimplente.
+[VERIFICAR: REsp 1.473.484/RS e outros julgados sobre inoponibilidade
+da clausula locaticia ao condominio]
 ```
 
 **Dispositivo padrao:**
@@ -503,6 +514,34 @@ em face de [LOCATARIO] [e FIADOR, se for o caso], para:
 
 Custas e honorarios advocaticios pelo reu, fixados em [X]% sobre
 o valor da condenacao (art. 85, §2, CPC).
+
+P.R.I.
+```
+
+**Dispositivo padrao — multi-reu (procedencia parcial subjetiva):**
+```
+Ante o exposto:
+(I) Julgo PROCEDENTE o pedido em face de [LOCATARIO], para:
+    (a) DECLARAR rescindido o contrato de locacao do imovel
+        situado em [endereco completo];
+    (b) DECRETAR o despejo do reu, fixando o prazo de 30 (trinta)
+        dias para desocupacao voluntaria (art. 63, §1, Lei 8.245/91);
+    (c) CONDENAR o reu ao pagamento dos alugueis e encargos vencidos
+        e impagos no valor de R$ [valor], acrescidos de [correcao +
+        multa + juros], bem como dos alugueis vincendos ate a efetiva
+        desocupacao.
+
+(II) Julgo IMPROCEDENTE o pedido em face de [FIADOR], por
+     [ineficacia da fianca — Sumula 332/STJ: fianca prestada sem
+     autorizacao do conjuge / Sumula 214/STJ: aditamento sem anuencia
+     do fiador / Sumula 268/STJ: fiador nao incluido na acao de despejo
+     — selecionar a hipotese aplicavel].
+
+Custas e honorarios do locatario: fixados em [X]% sobre o valor da
+condenacao (art. 85, §2, CPC).
+Custas e honorarios do fiador: pelo autor, fixados em [X]% sobre o
+valor atualizado da causa (art. 85, §2, CPC), observada eventual
+gratuidade (art. 98, §3, CPC).
 
 P.R.I.
 ```
